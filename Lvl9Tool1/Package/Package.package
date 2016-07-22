@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="25405e4b-7639-40cf-a119-402e50f4ba59" 
+        solutionId="25405e4b-7639-40cf-a119-402e50f4ba59" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="Lvl9Tool1"
+        sharePointProductVersion="16.0">
+  <features>
+        <featureReference itemId="dc613b63-e265-46ca-8cce-3db3bd84dab3" />
+  </features>
+</package>
