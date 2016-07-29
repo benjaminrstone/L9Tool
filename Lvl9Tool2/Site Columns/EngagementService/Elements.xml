@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{1139e021-a2cf-4e3d-970e-cf2f0677f76f}"
+       Name="EngagementService"
+       DisplayName="Engagement Service"
+       Type="Choice"
+       Required="TRUE"
+       Group="Engagement">
+    <CHOICES>
+      <CHOICE>All Services</CHOICE>
+      <CHOICE>Requirements Only</CHOICE>
+      <CHOICE>Design Only</CHOICE>
+      <CHOICE>Requirements and Design</CHOICE>
+      <CHOICE>Requirements and Gap Analysis</CHOICE>
+    </CHOICES>
+    <MAPPINGS>
+      <MAPPING Value="1">All Services</MAPPING>
+      <MAPPING Value="2">Requirements</MAPPING>
+      <MAPPING Value="3">Design Only</MAPPING>
+      <MAPPING Value="4">Requirements and Design</MAPPING>
+      <MAPPING Value="5">Requirements and Gap Analysis</MAPPING>
+    </MAPPINGS>
+    <Default>All Services</Default>
+  </Field>
+</Elements>

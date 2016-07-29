@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{d4df5ed4-58e0-4035-a794-a0748af6bf14}"
+       Name="InitiativeType"
+       Title="InitiativeType"
+       DisplayName="Initiative Type"
+       Group="Engagement"
+       Description="The type of initiative this project will be"
+       Type="Choice"
+       Required ="TRUE">
+
+    <CHOICES>
+      <CHOICE>Privacy and Security</CHOICE>
+      <CHOICE>BIOS Key Initiative</CHOICE>
+      <CHOICE>Security Engineering</CHOICE>
+      <CHOICE>Security Strategy</CHOICE>
+      <CHOICE>IT Project</CHOICE>
+    </CHOICES>
+    <MAPPINGS>
+      <MAPPING Value="1">Privacy and Security</MAPPING>
+      <MAPPING Value="2">BIOS Key Initiative</MAPPING>
+      <MAPPING Value="3">Security Engineering</MAPPING>
+      <MAPPING Value="4">Security Strategy</MAPPING>
+      <MAPPING Value="5">IT Project</MAPPING>
+    </MAPPINGS>
+    <Default>Privacy and Security</Default>
+  </Field>
+</Elements>

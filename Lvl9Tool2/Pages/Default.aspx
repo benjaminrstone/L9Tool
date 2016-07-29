@@ -21,14 +21,21 @@
 
 <%-- The markup in the following Content element will be placed in the TitleArea of the page --%>
 <asp:Content ContentPlaceHolderID="PlaceHolderPageTitleInTitleArea" runat="server">
-    Security Components List
+    Active Projects
 </asp:Content>
 
 <%-- The markup and script in the following Content element will be placed in the <body> of the page --%>
 <asp:Content ContentPlaceHolderID="PlaceHolderMain" runat="server">
 
+    <div>
+        <p id="message">
+            <!-- The following content will be replaced with the user name when you run the app - see App.js -->
+            initializing...
+        </p>
+    </div>
+
     <p><asp:HyperLink runat="server" 
-    NavigateUrl="JavaScript:window.location = _spPageContextInfo.webAbsoluteUrl + '/Lists/HSBCComponents/AllItems.aspx';" 
-    Text="Level 9 Projects" /></p>
+    NavigateUrl="JavaScript:window.location = _spPageContextInfo.webAbsoluteUrl + '/Lists/HSBC/AllItems.aspx';" 
+    Text="New Employees in Seattle" /></p>
 
 </asp:Content>

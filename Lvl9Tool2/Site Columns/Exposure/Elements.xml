@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{9a7598c5-ebd1-41fc-b052-a4f43eb0da0a}"
+       Name="Exposure"
+       DisplayName="Exposure"
+       Description="What exposure this initiative has"
+       Type="Choice"
+       Required="TRUE"
+       Group="Engagement">
+    
+    <CHOICES>
+      <CHOICE>Internal</CHOICE>
+      <CHOICE>External</CHOICE>
+    </CHOICES>
+    <MAPPINGS>
+      <MAPPING Value="1">Internal</MAPPING>
+      <MAPPING Value="2">External</MAPPING>
+    </MAPPINGS>
+    <Default>Internal</Default>
+  </Field>
+</Elements>

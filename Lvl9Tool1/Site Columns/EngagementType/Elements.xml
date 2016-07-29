@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{3a823e55-1cbe-4b00-9948-54310843aa6a}"
+       Name="EngagementType"
+       DisplayName="Engagement Type"
+       Group="Engagement"
+       Description="The type of initiative this project will be"
+       Type="Choice"
+       Required ="TRUE">
+
+    <CHOICES>
+      <CHOICE>Add/Integrate New System</CHOICE>
+      <CHOICE>Existing System</CHOICE>
+    </CHOICES>
+    <MAPPINGS>
+      <MAPPING Value="1">Add/Integrate New System</MAPPING>
+      <MAPPING Value="2">Existing System</MAPPING>
+    </MAPPINGS>
+    <Default>Add/Integrate New System</Default>
+  </Field>
+</Elements>

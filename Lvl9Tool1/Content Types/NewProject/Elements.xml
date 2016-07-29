@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x01009D7973112BC24572BAEBA3127A067E31" Name="NewProject" Group="L9 Project" Description="My Content Type" Inherits="FALSE" Version="0">
+    <FieldRefs>
+      <FieldRef Name="LinkTitle" ID="{82642ec8-ef9b-478f-acf9-31f7d45fbc31}" DisplayName="Project" />
+      <FieldRef Name="Title" ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" DisplayName="Project" />
+      <FieldRef ID="{d4df5ed4-58e0-4035-a794-a0748af6bf14}" DisplayName="Initiative Type" Required="TRUE" Description="The type of engagement this project will be" Name="InitiativeType" />
+      <FieldRef ID="{3a823e55-1cbe-4b00-9948-54310843aa6a}" DisplayName="Engagement Type" Required="TRUE" Description="The type of initiative this project will be" Name="EngagementType" />
+      <FieldRef ID="{9a7598c5-ebd1-41fc-b052-a4f43eb0da0a}" DisplayName="Exposure" Required="TRUE" Description="What exposure this initiative has" Name="Exposure" />
+      <FieldRef ID="{1139e021-a2cf-4e3d-970e-cf2f0677f76f}" DisplayName="Engagement Service" Required="TRUE" Name="EngagementService" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

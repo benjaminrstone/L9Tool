@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="HSBC Security Components" OnQuickLaunch="FALSE" TemplateType="100" Url="Lists/HSBCComponents" Description="My List Instance">
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Title">DNS Server</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Remote login</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Database server</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Client PC</Field>
+        </Row>
+      </Rows>
+    </Data>
+  </ListInstance>
+</Elements>
