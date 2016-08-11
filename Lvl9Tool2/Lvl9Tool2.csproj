@@ -44,24 +44,58 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="Content Types\New Project\Elements.xml" />
+    <Content Include="Features\Feature2\Feature2.Template.xml">
+      <DependentUpon>Feature2.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\Feature3\Feature3.Template.xml">
+      <DependentUpon>Feature3.feature</DependentUpon>
+    </Content>
     <Content Include="Lists\Level 9 Group\Elements.xml" />
-    <Content Include="Lists\Level 9 Group\HSBC\Elements.xml" />
+    <Content Include="Lists\Level 9 Group\Projects - Engagement\Elements.xml" />
+    <Content Include="Lists\Level 9 Group\Projects - Requirements\Elements.xml" />
+    <Content Include="Lists\Level 9 Group\Projects - Requirements\Projects - Requirements Instance\Elements.xml" />
+    <Content Include="Lists\Level 9 Group\Projects - Requirements\Schema.xml" />
+    <Content Include="Lists\Level 9 Group\Projects - Scope\Elements.xml" />
+    <Content Include="Lists\Level 9 Group\Projects - Scope\Schema.xml" />
+    <Content Include="Lists\Level 9 Group\Projects - Scope\Scope\Elements.xml" />
     <Content Include="Lists\Level 9 Group\Schema.xml" />
-    <Content Include="Site Columns\EngagementService\Elements.xml" />
-    <Content Include="Site Columns\EngagementType\Elements.xml" />
-    <Content Include="Site Columns\Exposure\Elements.xml" />
-    <Content Include="Site Columns\InitiativeType\Elements.xml" />
-    <Content Include="Site Columns\MisUseCases\Elements.xml">
+    <Content Include="Site Columns\Engagement Columns\EngagementService\Elements.xml" />
+    <Content Include="Site Columns\Engagement Columns\EngagementType\Elements.xml" />
+    <Content Include="Site Columns\Engagement Columns\Exposure\Elements.xml" />
+    <Content Include="Site Columns\Engagement Columns\InitiativeType\Elements.xml" />
+    <Content Include="Site Columns\Requirements\MisUseCases\Elements.xml">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="Site Columns\UseCases\Elements.xml">
+    <Content Include="Site Columns\Scope\Deliverable\Elements.xml" />
+    <Content Include="Site Columns\Scope\Phase\Elements.xml" />
+    <Content Include="Site Columns\Requirements\UseCases\Elements.xml">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="Workflows\WorkflowHistoryList\Elements.xml" />
+    <Content Include="Workflows\WorkflowTaskList\Elements.xml" />
     <None Include="Content Types\New Project\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{7ec34ed1-ae81-4bec-9757-e4c79f24fc1d}</SharePointProjectItemId>
     </None>
-    <None Include="Lists\Level 9 Group\HSBC\SharePointProjectItem.spdata">
+    <None Include="Features\Feature2\Feature2.feature">
+      <FeatureId>{6974d9a8-d705-4a68-a9b0-1b102ef31957}</FeatureId>
+    </None>
+    <None Include="Features\Feature3\Feature3.feature">
+      <FeatureId>{9481b30e-4877-4435-87da-dffec749fa0a}</FeatureId>
+    </None>
+    <None Include="Lists\Level 9 Group\Projects - Engagement\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{a1021e7a-df3d-468e-b422-d2218cffce61}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\Level 9 Group\Projects - Requirements\Projects - Requirements Instance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{92fc27d3-1f1e-4b3e-b8a5-d6d3387adbdb}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\Level 9 Group\Projects - Requirements\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{8ba4dda7-0809-46c1-b5c2-88f605b81aa5}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\Level 9 Group\Projects - Scope\Scope\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c0f4e687-e258-4935-b329-6760d1db7803}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\Level 9 Group\Projects - Scope\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{2ae6d29e-fe18-4271-bb4b-22da56126f65}</SharePointProjectItemId>
     </None>
     <None Include="Lists\Level 9 Group\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{50e2cc88-8895-4bfc-8bd4-94640c1c0f53}</SharePointProjectItemId>
@@ -72,23 +106,38 @@
     </None>
     <Content Include="Pages\Elements.xml" />
     <Content Include="Pages\Default.aspx" />
-    <None Include="Site Columns\EngagementService\SharePointProjectItem.spdata">
+    <None Include="Site Columns\Engagement Columns\EngagementService\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{7ce77957-d2d0-4db4-89d5-ae4e8432480c}</SharePointProjectItemId>
     </None>
-    <None Include="Site Columns\EngagementType\SharePointProjectItem.spdata">
+    <None Include="Site Columns\Engagement Columns\EngagementType\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{2f0ae34d-3d95-486a-8cbe-c7e11e53d7aa}</SharePointProjectItemId>
     </None>
-    <None Include="Site Columns\Exposure\SharePointProjectItem.spdata">
+    <None Include="Site Columns\Engagement Columns\Exposure\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{4b12d7a8-ca43-4821-a408-8f759a1d424c}</SharePointProjectItemId>
     </None>
-    <None Include="Site Columns\InitiativeType\SharePointProjectItem.spdata">
+    <None Include="Site Columns\Engagement Columns\InitiativeType\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{5b5c88dd-a455-4dcf-85ab-2d99ba94cf2b}</SharePointProjectItemId>
     </None>
-    <None Include="Site Columns\MisUseCases\SharePointProjectItem.spdata">
+    <None Include="Site Columns\Requirements\MisUseCases\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{3ac95111-59c4-4ae7-977f-095accc34a97}</SharePointProjectItemId>
     </None>
-    <None Include="Site Columns\UseCases\SharePointProjectItem.spdata">
+    <None Include="Site Columns\Scope\Deliverable\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ebbe861a-2978-4f4b-83ea-304d0c36c6b4}</SharePointProjectItemId>
+    </None>
+    <None Include="Site Columns\Scope\Phase\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{eaf53718-cda2-44bd-bb07-9e125cf525e2}</SharePointProjectItemId>
+    </None>
+    <None Include="Site Columns\Requirements\UseCases\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{e81cd01e-de08-4ec5-9938-6bf00cffb237}</SharePointProjectItemId>
+    </None>
+    <None Include="Workflows\WorkflowHistoryList\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b35c6cce-5ef0-49e3-a9fa-4bc6282f9728}</SharePointProjectItemId>
+    </None>
+    <None Include="Workflows\ProjectStartedWorkflow\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{98778578-8601-4ba0-a9ba-b81c6bba4996}</SharePointProjectItemId>
+    </None>
+    <None Include="Workflows\WorkflowTaskList\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{8b3e0a62-697c-4f62-95cf-919dc337bab5}</SharePointProjectItemId>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -137,6 +186,27 @@
     <AppManifestFile Include="AppManifest.xml">
       <SubType>Designer</SubType>
     </AppManifestFile>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Activities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Activities.Design, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SharePoint.DesignTime.Activities.16.0, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SharePoint.DesignTime.Activities.16.0.Design, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Activities" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel.Activities" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <XamlAppDef Include="Workflows\ProjectStartedWorkflow\Workflow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </XamlAppDef>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

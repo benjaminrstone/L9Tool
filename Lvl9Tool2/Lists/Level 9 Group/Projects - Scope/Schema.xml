@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="Projects - Scope" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/Projects - Scope" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      
+      
+    <ContentType ID="0x010087e6bdfdf8734d76bcbb6538c50d8ded" Name="ListFieldsContentType"><FieldRefs><FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" /><FieldRef ID="{d648b07c-06e0-43d5-a589-26a94e521844}" Name="Phase" /><FieldRef ID="{ddffc3bb-2c6f-4353-af9d-21b4e05a1cdb}" Name="Deliverable" /></FieldRefs></ContentType><ContentTypeRef ID="0x01">
+        <Folder TargetName="Item" />
+      </ContentTypeRef><ContentTypeRef ID="0x0120" /></ContentTypes>
+    <Fields>
+      
+    <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" /><Field ID="{d648b07c-06e0-43d5-a589-26a94e521844}" Name="Phase" DisplayName="Phase" Type="Choice" Required="FALSE" Group="Scope" Description="A phase of the project"><CHOICES><CHOICE>Qualified Idea</CHOICE><CHOICE>Concept</CHOICE><CHOICE>Definition</CHOICE><CHOICE>Dev-Build</CHOICE><CHOICE>Deployment</CHOICE><CHOICE>Close-Out</CHOICE></CHOICES><MAPPINGS><MAPPING Value="1">Qualified Idea</MAPPING><MAPPING Value="2">Concept</MAPPING><MAPPING Value="3">Definition</MAPPING><MAPPING Value="4">Dev-Build</MAPPING><MAPPING Value="5">Deployment</MAPPING><MAPPING Value="6">Close-Out</MAPPING></MAPPINGS><Default>Qualified Idea</Default></Field><Field ID="{ddffc3bb-2c6f-4353-af9d-21b4e05a1cdb}" Name="Deliverable" DisplayName="Deliverable" Type="Choice" Required="FALSE" Group="Scope" Description="The deliverable associated with this phase"><CHOICES><CHOICE>Requirements</CHOICE><CHOICE>Design Recommendations</CHOICE><CHOICE>Gap Analysis</CHOICE></CHOICES><MAPPINGS><MAPPING Value="1">Requirements</MAPPING><MAPPING Value="2">Design Recommendations</MAPPING><MAPPING Value="3">Gap Analysis</MAPPING></MAPPINGS><Default>None</Default></Field></Fields>
+    <Views>
+      
+      
+    <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitleNoMenu"></FieldRef></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitle"></FieldRef><FieldRef Name="Phase" /><FieldRef Name="Deliverable" /></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="ID"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View></Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

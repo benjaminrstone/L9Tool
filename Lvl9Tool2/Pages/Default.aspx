@@ -35,7 +35,7 @@
     </div>
 
     <p><asp:HyperLink runat="server" 
-    NavigateUrl="JavaScript:window.location = _spPageContextInfo.webAbsoluteUrl + '/Lists/HSBC/AllItems.aspx';" 
-    Text="New Employees in Seattle" /></p>
+    NavigateUrl="JavaScript:window.location = _spPageContextInfo.webAbsoluteUrl + '/Lists/Projects - Engagement/AllItems.aspx';" 
+    Text="Ben Stone" /></p>
 
 </asp:Content>

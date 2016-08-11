@@ -1,0 +1,180 @@
+﻿<Activity mc:Ignorable="sap sap2010 sads" x:Class="Lvl9Tool2.Workflows.ProjectStartedWorkflow.Workflow" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap2010:WorkflowViewState.IdRef="Lvl9Tool2.Workflows.ProjectStartedWorkflow.Workflow_1"
+ xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities"
+ xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+ xmlns:mca="clr-namespace:Microsoft.CSharp.Activities;assembly=System.Activities"
+ xmlns:msdad="clr-namespace:Microsoft.SharePoint.DesignTime.Activities.Design;assembly=Microsoft.SharePoint.DesignTime.Activities.16.0.Design"
+ xmlns:p="http://schemas.microsoft.com/workflow/2012/07/xaml/activities"
+ xmlns:p1="wf://workflow.windows.net/$Activities"
+ xmlns:s="clr-namespace:System;assembly=mscorlib"
+ xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugger"
+ xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation"
+ xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation"
+ xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib"
+ xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib"
+ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Text</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>Microsoft.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.SharePoint.DesignTime.Activities.16.0</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>Microsoft.SharePoint.DesignTime.Activities.16.0.Design</AssemblyReference>
+      <AssemblyReference>Microsoft.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>Lvl9Tool2</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:Int32" Name="outcome_0" />
+      <Variable x:TypeArguments="p:DynamicValue" Name="currentEngagementItem" />
+      <Variable x:TypeArguments="p:DynamicValue" Name="dv_1" />
+      <Variable x:TypeArguments="p:DynamicValue" Name="dv_0" />
+      <Variable x:TypeArguments="x:String" Name="Title" />
+      <Variable x:TypeArguments="x:String" Name="webAbsoluteURI" />
+      <Variable x:TypeArguments="x:String" Name="scopeURI" />
+    </Sequence.Variables>
+    <p1:LookupSPListItem ItemGuid="{x:Null}" Properties="{x:Null}" DisplayName="LookupCurrentProjectItem" sap2010:WorkflowViewState.IdRef="LookupSPListItem_1">
+      <p1:LookupSPListItem.ItemId>
+        <InArgument x:TypeArguments="x:Int32">
+          <p:ExpressionContainerValue x:TypeArguments="x:Int32">
+            <p1:GetCurrentItemId />
+          </p:ExpressionContainerValue>
+        </InArgument>
+      </p1:LookupSPListItem.ItemId>
+      <p1:LookupSPListItem.ListId>
+        <InArgument x:TypeArguments="s:Guid">
+          <p:ExpressionContainerValue x:TypeArguments="s:Guid">
+            <p1:GetCurrentListId />
+          </p:ExpressionContainerValue>
+        </InArgument>
+      </p1:LookupSPListItem.ListId>
+      <p1:LookupSPListItem.Result>
+        <OutArgument x:TypeArguments="p:DynamicValue">
+          <mca:CSharpReference x:TypeArguments="p:DynamicValue">currentEngagementItem</mca:CSharpReference>
+        </OutArgument>
+      </p1:LookupSPListItem.Result>
+    </p1:LookupSPListItem>
+    <p:GetODataProperties DisplayName="GetDynamicValueProperties" sap2010:WorkflowViewState.IdRef="GetODataProperties_2">
+      <p:GetODataProperties.Source>
+        <InArgument x:TypeArguments="p:DynamicValue">
+          <mca:CSharpValue x:TypeArguments="p:DynamicValue">currentEngagementItem</mca:CSharpValue>
+        </InArgument>
+      </p:GetODataProperties.Source>
+      <scg:Dictionary x:TypeArguments="x:String, OutArgument">
+        <OutArgument x:TypeArguments="x:String" x:Key="Title">
+          <mca:CSharpReference x:TypeArguments="x:String">Title</mca:CSharpReference>
+        </OutArgument>
+      </scg:Dictionary>
+    </p:GetODataProperties>
+    <p1:CreateListItem CreatedListItemProperties="{x:Null}" ItemGuid="{x:Null}" ItemId="{x:Null}" ListItemProperties="{x:Null}" sap2010:WorkflowViewState.IdRef="CreateListItem_1">
+      <p1:CreateListItem.ListId>
+        <InArgument x:TypeArguments="s:Guid">
+          <mca:CSharpValue x:TypeArguments="s:Guid">System.Guid.Parse("{$ListId:Lists/Scope;}")</mca:CSharpValue>
+        </InArgument>
+      </p1:CreateListItem.ListId>
+      <p1:CreateListItem.ListItemPropertiesDynamicValue>
+        <InArgument x:TypeArguments="p:DynamicValue">
+          <p:SetDynamicValueProperties>
+            <scg:Dictionary x:TypeArguments="x:String, InArgument">
+              <InArgument x:TypeArguments="x:String" x:Key="Title">
+                <mca:CSharpValue x:TypeArguments="x:String">Title</mca:CSharpValue>
+              </InArgument>
+            </scg:Dictionary>
+          </p:SetDynamicValueProperties>
+        </InArgument>
+      </p1:CreateListItem.ListItemPropertiesDynamicValue>
+    </p1:CreateListItem>
+    <p1:WebUri sap2010:WorkflowViewState.IdRef="WebUri_1">
+      <p1:WebUri.Result>
+        <OutArgument x:TypeArguments="x:String">
+          <mca:CSharpReference x:TypeArguments="x:String">webAbsoluteURI</mca:CSharpReference>
+        </OutArgument>
+      </p1:WebUri.Result>
+    </p1:WebUri>
+    <p:BuildUri DisplayName="scopeURI" sap2010:WorkflowViewState.IdRef="BuildUri_1" Path="Lists/Scope">
+      <p:BuildUri.Host>
+        <InArgument x:TypeArguments="x:String">
+          <mca:CSharpValue x:TypeArguments="x:String">webAbsoluteURI</mca:CSharpValue>
+        </InArgument>
+      </p:BuildUri.Host>
+      <p:BuildUri.Result>
+        <OutArgument x:TypeArguments="x:String">
+          <mca:CSharpReference x:TypeArguments="x:String">scopeURI</mca:CSharpReference>
+        </OutArgument>
+      </p:BuildUri.Result>
+      <p:BuildUri.Source>
+        <InArgument x:TypeArguments="x:String">
+          <mca:CSharpValue x:TypeArguments="x:String">webAbsoluteURI</mca:CSharpValue>
+        </InArgument>
+      </p:BuildUri.Source>
+    </p:BuildUri>
+    <p:HttpSend RetryOnConnectionFailure="False">
+      <p:HttpSend.Uri>
+        <InArgument x:TypeArguments="x:String">
+          <mca:CSharpValue x:TypeArguments="x:String">scopeURI</mca:CSharpValue>
+        </InArgument>
+      </p:HttpSend.Uri>
+      <sap2010:WorkflowViewState.IdRef>HttpSend_1</sap2010:WorkflowViewState.IdRef>
+    </p:HttpSend>
+    <sads:DebugSymbol.Symbol>d3dDOlxVc2Vyc1xxdWFya1xkb2N1bWVudHNcdmlzdWFsIHN0dWRpbyAyMDE1XFByb2plY3RzXEx2bDlUb29sMVxMdmw5VG9vbDJcV29ya2Zsb3dzXFByb2plY3RTdGFydGVkV29ya2Zsb3dcV29ya2Zsb3cueGFtbBcrA4kBDgIBATUFSRsCAVFKBVUcAgFAVgVnGQIBLmgFbhECASVvBX8SAgELgAEFhwESAgECPwtBKAIBW0YLRmwCAVM4CzooAgFSTQtNZAIBSVILUlYCAUFeC2QpAgE3WQtZcgIBL2sLa18CASZvWm9nAgEkdwt3WQIBHHwLfFcCARRyC3JXAgEMgwELgwFRAgEDQA1AJAMBWwE5DTkkAwFSAWERYVQCATg=</sads:DebugSymbol.Symbol>
+  </Sequence>
+  <sap2010:WorkflowViewState.ViewStateManager>
+    <sap2010:ViewStateManager>
+      <sap2010:ViewStateData Id="LookupSPListItem_1" sap:VirtualizedContainerService.HintSize="247,89">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <scg:Dictionary x:TypeArguments="x:String, msdad:ViewStateNameValue" x:Key="SPLocalizedDisplayNames">
+              <msdad:ViewStateNameValue x:Key="ItemId" DisplayName="(current item)" Value="$CurrentItemId" />
+              <msdad:ViewStateNameValue x:Key="ListId" DisplayName="(current list)" Value="$CurrentListId" />
+            </scg:Dictionary>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="GetODataProperties_2" sap:VirtualizedContainerService.HintSize="247,92">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:String x:Key="Properties.SelectedEntityType">Lists/Projects - Engagement</x:String>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="CreateListItem_1" sap:VirtualizedContainerService.HintSize="247,68">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <scg:Dictionary x:TypeArguments="x:String, msdad:ViewStateNameValue" x:Key="SPLocalizedDisplayNames">
+              <msdad:ViewStateNameValue x:Key="ListId" DisplayName="Scope" Value="Lists/Scope" />
+            </scg:Dictionary>
+            <x:String x:Key="ListItemPropertiesDynamicValue.SelectedEntityType">Lists/Scope</x:String>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="WebUri_1" sap:VirtualizedContainerService.HintSize="247,68" />
+      <sap2010:ViewStateData Id="BuildUri_1" sap:VirtualizedContainerService.HintSize="247,22" />
+      <sap2010:ViewStateData Id="HttpSend_1" sap:VirtualizedContainerService.HintSize="247,62" />
+      <sap2010:ViewStateData Id="Sequence_1" sap:VirtualizedContainerService.HintSize="269,725">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="Lvl9Tool2.Workflows.ProjectStartedWorkflow.Workflow_1" sap:VirtualizedContainerService.HintSize="309,805" />
+    </sap2010:ViewStateManager>
+  </sap2010:WorkflowViewState.ViewStateManager>
+</Activity>

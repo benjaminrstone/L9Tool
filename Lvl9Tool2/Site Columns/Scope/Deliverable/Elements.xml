@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{ddffc3bb-2c6f-4353-af9d-21b4e05a1cdb}"
+       Name="Deliverable"
+       DisplayName="Deliverable"
+       Type="Choice"
+       Required="FALSE"
+       Group="Scope"
+       Description="The deliverable associated with this phase">
+
+    <CHOICES>
+      <CHOICE>Requirements</CHOICE>
+      <CHOICE>Design Recommendations</CHOICE>
+      <CHOICE>Gap Analysis</CHOICE>
+    </CHOICES>
+    <MAPPINGS>
+      <MAPPING Value="1">Requirements</MAPPING>
+      <MAPPING Value="2">Design Recommendations</MAPPING>
+      <MAPPING Value="3">Gap Analysis</MAPPING>
+    </MAPPINGS>
+    <Default>None</Default>
+  </Field>
+</Elements>

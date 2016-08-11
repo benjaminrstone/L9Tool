@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field
+       ID="{d648b07c-06e0-43d5-a589-26a94e521844}"
+       Name="Phase"
+       DisplayName="Phase"
+       Type="Choice"
+       Required="FALSE"
+       Group="Scope"
+       Description="A phase of the project">
+
+    <CHOICES>
+      <CHOICE>Qualified Idea</CHOICE>
+      <CHOICE>Concept</CHOICE>
+      <CHOICE>Definition</CHOICE>
+      <CHOICE>Dev-Build</CHOICE>
+      <CHOICE>Deployment</CHOICE>
+      <CHOICE>Close-Out</CHOICE>
+    </CHOICES>
+    <MAPPINGS>
+      <MAPPING Value="1">Qualified Idea</MAPPING>
+      <MAPPING Value="2">Concept</MAPPING>
+      <MAPPING Value="3">Definition</MAPPING>
+      <MAPPING Value="4">Dev-Build</MAPPING>
+      <MAPPING Value="5">Deployment</MAPPING>
+      <MAPPING Value="6">Close-Out</MAPPING>
+    </MAPPINGS>
+    <Default>Qualified Idea</Default>
+  </Field>
+</Elements>
