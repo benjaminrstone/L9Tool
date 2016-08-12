@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Controls" OnQuickLaunch="FALSE" TemplateType="100" FeatureId="9dac4074-768a-4a98-94d6-657892c3166a" Url="Lists/Controls" Description="The library of controls associated with specific technical components"></ListInstance>
+</Elements>

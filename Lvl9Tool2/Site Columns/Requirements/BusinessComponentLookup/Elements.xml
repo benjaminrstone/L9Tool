@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{8c669bba-967c-4c3b-bdbc-1b88a9e7e519}"
+       Name="BusinessComponentLookup"
+       DisplayName="Business Component Lookup"
+       Type="Lookup"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

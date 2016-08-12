@@ -42,13 +42,12 @@
   </TextExpression.ReferencesForImplementation>
   <Sequence sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
-      <Variable x:TypeArguments="x:Int32" Name="outcome_0" />
-      <Variable x:TypeArguments="p:DynamicValue" Name="currentEngagementItem" />
-      <Variable x:TypeArguments="p:DynamicValue" Name="dv_1" />
-      <Variable x:TypeArguments="p:DynamicValue" Name="dv_0" />
+      <Variable x:TypeArguments="p:DynamicValue" Name="engagementItem" />
       <Variable x:TypeArguments="x:String" Name="Title" />
       <Variable x:TypeArguments="x:String" Name="webAbsoluteURI" />
       <Variable x:TypeArguments="x:String" Name="scopeURI" />
+      <Variable x:TypeArguments="x:Int32" Name="engagementItemID" />
+      <Variable x:TypeArguments="x:Int32" Name="testvar" />
     </Sequence.Variables>
     <p1:LookupSPListItem ItemGuid="{x:Null}" Properties="{x:Null}" DisplayName="LookupCurrentProjectItem" sap2010:WorkflowViewState.IdRef="LookupSPListItem_1">
       <p1:LookupSPListItem.ItemId>
@@ -67,14 +66,14 @@
       </p1:LookupSPListItem.ListId>
       <p1:LookupSPListItem.Result>
         <OutArgument x:TypeArguments="p:DynamicValue">
-          <mca:CSharpReference x:TypeArguments="p:DynamicValue">currentEngagementItem</mca:CSharpReference>
+          <mca:CSharpReference x:TypeArguments="p:DynamicValue">engagementItem</mca:CSharpReference>
         </OutArgument>
       </p1:LookupSPListItem.Result>
     </p1:LookupSPListItem>
     <p:GetODataProperties DisplayName="GetDynamicValueProperties" sap2010:WorkflowViewState.IdRef="GetODataProperties_2">
       <p:GetODataProperties.Source>
         <InArgument x:TypeArguments="p:DynamicValue">
-          <mca:CSharpValue x:TypeArguments="p:DynamicValue">currentEngagementItem</mca:CSharpValue>
+          <mca:CSharpValue x:TypeArguments="p:DynamicValue">engagementItem</mca:CSharpValue>
         </InArgument>
       </p:GetODataProperties.Source>
       <scg:Dictionary x:TypeArguments="x:String, OutArgument">
@@ -83,7 +82,7 @@
         </OutArgument>
       </scg:Dictionary>
     </p:GetODataProperties>
-    <p1:CreateListItem CreatedListItemProperties="{x:Null}" ItemGuid="{x:Null}" ItemId="{x:Null}" ListItemProperties="{x:Null}" sap2010:WorkflowViewState.IdRef="CreateListItem_1">
+    <p1:CreateListItem CreatedListItemProperties="{x:Null}" ItemGuid="{x:Null}" ItemId="{x:Null}" ListItemProperties="{x:Null}" DisplayName="CreateScopeEntry" sap2010:WorkflowViewState.IdRef="CreateListItem_1">
       <p1:CreateListItem.ListId>
         <InArgument x:TypeArguments="s:Guid">
           <mca:CSharpValue x:TypeArguments="s:Guid">System.Guid.Parse("{$ListId:Lists/Scope;}")</mca:CSharpValue>
@@ -101,39 +100,7 @@
         </InArgument>
       </p1:CreateListItem.ListItemPropertiesDynamicValue>
     </p1:CreateListItem>
-    <p1:WebUri sap2010:WorkflowViewState.IdRef="WebUri_1">
-      <p1:WebUri.Result>
-        <OutArgument x:TypeArguments="x:String">
-          <mca:CSharpReference x:TypeArguments="x:String">webAbsoluteURI</mca:CSharpReference>
-        </OutArgument>
-      </p1:WebUri.Result>
-    </p1:WebUri>
-    <p:BuildUri DisplayName="scopeURI" sap2010:WorkflowViewState.IdRef="BuildUri_1" Path="Lists/Scope">
-      <p:BuildUri.Host>
-        <InArgument x:TypeArguments="x:String">
-          <mca:CSharpValue x:TypeArguments="x:String">webAbsoluteURI</mca:CSharpValue>
-        </InArgument>
-      </p:BuildUri.Host>
-      <p:BuildUri.Result>
-        <OutArgument x:TypeArguments="x:String">
-          <mca:CSharpReference x:TypeArguments="x:String">scopeURI</mca:CSharpReference>
-        </OutArgument>
-      </p:BuildUri.Result>
-      <p:BuildUri.Source>
-        <InArgument x:TypeArguments="x:String">
-          <mca:CSharpValue x:TypeArguments="x:String">webAbsoluteURI</mca:CSharpValue>
-        </InArgument>
-      </p:BuildUri.Source>
-    </p:BuildUri>
-    <p:HttpSend RetryOnConnectionFailure="False">
-      <p:HttpSend.Uri>
-        <InArgument x:TypeArguments="x:String">
-          <mca:CSharpValue x:TypeArguments="x:String">scopeURI</mca:CSharpValue>
-        </InArgument>
-      </p:HttpSend.Uri>
-      <sap2010:WorkflowViewState.IdRef>HttpSend_1</sap2010:WorkflowViewState.IdRef>
-    </p:HttpSend>
-    <sads:DebugSymbol.Symbol>d3dDOlxVc2Vyc1xxdWFya1xkb2N1bWVudHNcdmlzdWFsIHN0dWRpbyAyMDE1XFByb2plY3RzXEx2bDlUb29sMVxMdmw5VG9vbDJcV29ya2Zsb3dzXFByb2plY3RTdGFydGVkV29ya2Zsb3dcV29ya2Zsb3cueGFtbBcrA4kBDgIBATUFSRsCAVFKBVUcAgFAVgVnGQIBLmgFbhECASVvBX8SAgELgAEFhwESAgECPwtBKAIBW0YLRmwCAVM4CzooAgFSTQtNZAIBSVILUlYCAUFeC2QpAgE3WQtZcgIBL2sLa18CASZvWm9nAgEkdwt3WQIBHHwLfFcCARRyC3JXAgEMgwELgwFRAgEDQA1AJAMBWwE5DTkkAwFSAWERYVQCATg=</sads:DebugSymbol.Symbol>
+    <sads:DebugSymbol.Symbol>d3dDOlxVc2Vyc1xxdWFya1xkb2N1bWVudHNcdmlzdWFsIHN0dWRpbyAyMDE1XFByb2plY3RzXEx2bDlUb29sMVxMdmw5VG9vbDJcV29ya2Zsb3dzXFByb2plY3RTdGFydGVkV29ya2Zsb3dcV29ya2Zsb3cueGFtbA4rA2gOAgEBNAVIGwIBIUkFVBwCARJVBWYZAgECPgtAKAIBKkULRWUCASM3CzkoAgEiTAtMXQIBGlELUVYCARNdC2MpAgEKWAtYcgIBAz8NPyQDASoBOA04JAMBIgFgEWBUAgEL</sads:DebugSymbol.Symbol>
   </Sequence>
   <sap2010:WorkflowViewState.ViewStateManager>
     <sap2010:ViewStateManager>
@@ -164,17 +131,20 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </sap2010:ViewStateData>
-      <sap2010:ViewStateData Id="WebUri_1" sap:VirtualizedContainerService.HintSize="247,68" />
-      <sap2010:ViewStateData Id="BuildUri_1" sap:VirtualizedContainerService.HintSize="247,22" />
-      <sap2010:ViewStateData Id="HttpSend_1" sap:VirtualizedContainerService.HintSize="247,62" />
-      <sap2010:ViewStateData Id="Sequence_1" sap:VirtualizedContainerService.HintSize="269,725">
+      <sap2010:ViewStateData Id="Sequence_1" sap:VirtualizedContainerService.HintSize="269,453">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </sap2010:ViewStateData>
-      <sap2010:ViewStateData Id="Lvl9Tool2.Workflows.ProjectStartedWorkflow.Workflow_1" sap:VirtualizedContainerService.HintSize="309,805" />
+      <sap2010:ViewStateData Id="Lvl9Tool2.Workflows.ProjectStartedWorkflow.Workflow_1" sap:VirtualizedContainerService.HintSize="309,533">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
     </sap2010:ViewStateManager>
   </sap2010:WorkflowViewState.ViewStateManager>
 </Activity>

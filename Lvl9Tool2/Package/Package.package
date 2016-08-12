@@ -4,5 +4,7 @@
     <featureReference itemId="36064d97-87a0-4b92-b1d0-efb3a09fe3ec" />
     <featureReference itemId="6974d9a8-d705-4a68-a9b0-1b102ef31957" />
     <featureReference itemId="9481b30e-4877-4435-87da-dffec749fa0a" />
+    <featureReference itemId="b39e596f-baac-41bc-ad33-189dd22ca79e" />
+    <featureReference itemId="7b2ea733-386e-4ad7-8a72-af1d79cca637" />
   </features>
 </package>

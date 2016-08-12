@@ -7,7 +7,7 @@
        DisplayName="Use Cases"
        Description="Scenarios for proper use of the components selected"
        Group="Security Components"
-       Type="Text"
+       Type="Note"
        Required ="FALSE">
   </Field>
 </Elements>

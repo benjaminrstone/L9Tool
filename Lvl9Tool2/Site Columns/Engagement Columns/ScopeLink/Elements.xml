@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{32ff29b1-1847-48ae-ab4c-0b66a786423f}"
+       Name="ScopeLink"
+       DisplayName="Scope Link"
+       Type="URL"
+       Required="FALSE"
+       Group="Engagement">
+    <Default>https://l9group-b503e78ced0bc4.sharepoint.com/sites/l9ToolTestSite/Lvl9Tool2/Lists/Scope</Default>
+  </Field>
+</Elements>

@@ -50,22 +50,40 @@
     <Content Include="Features\Feature3\Feature3.Template.xml">
       <DependentUpon>Feature3.feature</DependentUpon>
     </Content>
+    <Content Include="Features\Feature4\Feature4.Template.xml">
+      <DependentUpon>Feature4.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\Feature5\Feature5.Template.xml">
+      <DependentUpon>Feature5.feature</DependentUpon>
+    </Content>
     <Content Include="Lists\Level 9 Group\Elements.xml" />
+    <Content Include="Lists\Level 9 Group\Projects - Design\Elements.xml" />
+    <Content Include="Lists\Level 9 Group\Projects - Design\Design\Elements.xml" />
+    <Content Include="Lists\Level 9 Group\Projects - Design\Schema.xml" />
     <Content Include="Lists\Level 9 Group\Projects - Engagement\Elements.xml" />
     <Content Include="Lists\Level 9 Group\Projects - Requirements\Elements.xml" />
-    <Content Include="Lists\Level 9 Group\Projects - Requirements\Projects - Requirements Instance\Elements.xml" />
+    <Content Include="Lists\Level 9 Group\Projects - Requirements\Requirements\Elements.xml" />
     <Content Include="Lists\Level 9 Group\Projects - Requirements\Schema.xml" />
     <Content Include="Lists\Level 9 Group\Projects - Scope\Elements.xml" />
     <Content Include="Lists\Level 9 Group\Projects - Scope\Schema.xml" />
     <Content Include="Lists\Level 9 Group\Projects - Scope\Scope\Elements.xml" />
     <Content Include="Lists\Level 9 Group\Schema.xml" />
+    <Content Include="Lists\LookupList\BusinessComponents\Elements.xml" />
+    <Content Include="Lists\LookupList\Controls\Elements.xml" />
+    <Content Include="Lists\LookupList\Elements.xml" />
+    <Content Include="Lists\LookupList\Schema.xml" />
+    <Content Include="Lists\LookupList\TechnicalComponents\Elements.xml" />
+    <Content Include="Site Columns\Design\Status\Elements.xml" />
     <Content Include="Site Columns\Engagement Columns\EngagementService\Elements.xml" />
     <Content Include="Site Columns\Engagement Columns\EngagementType\Elements.xml" />
     <Content Include="Site Columns\Engagement Columns\Exposure\Elements.xml" />
     <Content Include="Site Columns\Engagement Columns\InitiativeType\Elements.xml" />
+    <Content Include="Site Columns\Engagement Columns\ScopeLink\Elements.xml" />
+    <Content Include="Site Columns\Requirements\BusinessComponentLookup\Elements.xml" />
     <Content Include="Site Columns\Requirements\MisUseCases\Elements.xml">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="Site Columns\Requirements\TechnicalComponentLookup\Elements.xml" />
     <Content Include="Site Columns\Scope\Deliverable\Elements.xml" />
     <Content Include="Site Columns\Scope\Phase\Elements.xml" />
     <Content Include="Site Columns\Requirements\UseCases\Elements.xml">
@@ -82,10 +100,22 @@
     <None Include="Features\Feature3\Feature3.feature">
       <FeatureId>{9481b30e-4877-4435-87da-dffec749fa0a}</FeatureId>
     </None>
+    <None Include="Features\Feature4\Feature4.feature">
+      <FeatureId>{b39e596f-baac-41bc-ad33-189dd22ca79e}</FeatureId>
+    </None>
+    <None Include="Features\Feature5\Feature5.feature">
+      <FeatureId>{7b2ea733-386e-4ad7-8a72-af1d79cca637}</FeatureId>
+    </None>
+    <None Include="Lists\Level 9 Group\Projects - Design\Design\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{73aa2c61-dd59-43f4-a074-9ea0f92aabfa}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\Level 9 Group\Projects - Design\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b5cabfbb-e02d-48bb-970a-422796ba7d7b}</SharePointProjectItemId>
+    </None>
     <None Include="Lists\Level 9 Group\Projects - Engagement\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{a1021e7a-df3d-468e-b422-d2218cffce61}</SharePointProjectItemId>
     </None>
-    <None Include="Lists\Level 9 Group\Projects - Requirements\Projects - Requirements Instance\SharePointProjectItem.spdata">
+    <None Include="Lists\Level 9 Group\Projects - Requirements\Requirements\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{92fc27d3-1f1e-4b3e-b8a5-d6d3387adbdb}</SharePointProjectItemId>
     </None>
     <None Include="Lists\Level 9 Group\Projects - Requirements\SharePointProjectItem.spdata">
@@ -100,12 +130,27 @@
     <None Include="Lists\Level 9 Group\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{50e2cc88-8895-4bfc-8bd4-94640c1c0f53}</SharePointProjectItemId>
     </None>
+    <None Include="Lists\LookupList\BusinessComponents\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f8351219-e561-433d-9632-7ee22cba8114}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\LookupList\Controls\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{8e7e34f7-3595-4830-ad1f-52023e24055e}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\LookupList\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{4b6df6f8-c6e6-4f3e-9ccd-3d34c9c2f61b}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\LookupList\TechnicalComponents\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{605d5980-ca1b-4ad7-aa69-9e5d0cdd35dd}</SharePointProjectItemId>
+    </None>
     <None Include="packages.config" />
     <None Include="Pages\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{f4dd77aa-6abe-416b-b2bf-957356a60730}</SharePointProjectItemId>
     </None>
     <Content Include="Pages\Elements.xml" />
     <Content Include="Pages\Default.aspx" />
+    <None Include="Site Columns\Design\Status\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a388d525-a13e-4ed4-93d2-64548c35c17e}</SharePointProjectItemId>
+    </None>
     <None Include="Site Columns\Engagement Columns\EngagementService\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{7ce77957-d2d0-4db4-89d5-ae4e8432480c}</SharePointProjectItemId>
     </None>
@@ -118,8 +163,17 @@
     <None Include="Site Columns\Engagement Columns\InitiativeType\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{5b5c88dd-a455-4dcf-85ab-2d99ba94cf2b}</SharePointProjectItemId>
     </None>
+    <None Include="Site Columns\Engagement Columns\ScopeLink\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{cf0b0ed2-f730-4663-8cc1-9620da328a88}</SharePointProjectItemId>
+    </None>
+    <None Include="Site Columns\Requirements\BusinessComponentLookup\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6292d046-e169-44d5-b9ac-ca6712e47b3d}</SharePointProjectItemId>
+    </None>
     <None Include="Site Columns\Requirements\MisUseCases\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{3ac95111-59c4-4ae7-977f-095accc34a97}</SharePointProjectItemId>
+    </None>
+    <None Include="Site Columns\Requirements\TechnicalComponentLookup\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{45843a6d-e598-45e1-972d-90b4e0b88181}</SharePointProjectItemId>
     </None>
     <None Include="Site Columns\Scope\Deliverable\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{ebbe861a-2978-4f4b-83ea-304d0c36c6b4}</SharePointProjectItemId>
@@ -208,6 +262,7 @@
       <SubType>Designer</SubType>
     </XamlAppDef>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

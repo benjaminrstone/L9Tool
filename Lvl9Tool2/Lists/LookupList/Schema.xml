@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<List xmlns:ows="Microsoft SharePoint" Title="Projects - Requirements" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/Projects - Requirements" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+<List xmlns:ows="Microsoft SharePoint" Title="LookupList" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/LookupList" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
   <MetaData>
     <ContentTypes>
       
       
-    <ContentType ID="0x0100413ef4973032490086e8c630043d46ea" Name="ListFieldsContentType"><FieldRefs><FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" /><FieldRef ID="{8270a40b-9196-43e2-901f-86abc600839b}" Name="MisUseCases" /><FieldRef ID="{982a9d98-ec5c-4240-a09b-c5cea28bffb7}" Name="UseCases" /><FieldRef ID="{898b783e-a5bc-41dc-8e59-86781803fa3c}" Name="TechnicalComponentLookup" /><FieldRef ID="{8c669bba-967c-4c3b-bdbc-1b88a9e7e519}" Name="BusinessComponentLookup" /></FieldRefs></ContentType><ContentTypeRef ID="0x01">
+    <ContentType ID="0x01007e9216d2a01c4d3da7062bff1f87faab" Name="ListFieldsContentType"><FieldRefs><FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" /><FieldRef ID="{AB065451-14D6-485a-88C3-414C908D50D3}" Name="CategoryDescription" /></FieldRefs></ContentType><ContentTypeRef ID="0x01">
         <Folder TargetName="Item" />
       </ContentTypeRef><ContentTypeRef ID="0x0120" /></ContentTypes>
     <Fields>
       
-    <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" /><Field ID="{8270a40b-9196-43e2-901f-86abc600839b}" Name="MisUseCases" Title="MisUseCases" DisplayName="Mis-use Cases" Group="SecurityComponents" Description="Scenarios for improper use of the components selected" Type="Note" Required="FALSE"></Field><Field ID="{982a9d98-ec5c-4240-a09b-c5cea28bffb7}" Name="UseCases" Title="UseCases" DisplayName="Use Cases" Description="Scenarios for proper use of the components selected" Group="Security Components" Type="Note" Required="FALSE"></Field><Field ID="{898b783e-a5bc-41dc-8e59-86781803fa3c}" Name="TechnicalComponentLookup" DisplayName="Technical Component Lookup" Type="Lookup" Required="FALSE" Group="Custom Site Columns" List="Lists/TechnicalComponents" ShowField="Title"></Field><Field ID="{8c669bba-967c-4c3b-bdbc-1b88a9e7e519}" Name="BusinessComponentLookup" DisplayName="Business Component Lookup" Type="Lookup" Required="FALSE" Group="Custom Site Columns" List="Lists/BusinessComponents" ShowField="Title"></Field></Fields>
+    <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" /><Field ID="{AB065451-14D6-485a-88C3-414C908D50D3}" Name="CategoryDescription" DisplayName="$Resources:spscore,CategoriesList_DescFieldName;" Type="Text" SourceID="http://schemas.microsoft.com/sharepoint.v3" DisplaceOnUpgrade="TRUE" Hidden="FALSE" Sealed="FALSE" AllowDeletion="FALSE" Required="TRUE" /></Fields>
     <Views>
       
       
@@ -37,7 +37,7 @@
         <RowLimit Paged="TRUE">30</RowLimit>
         <ViewFields>
           
-        <FieldRef Name="LinkTitle"></FieldRef><FieldRef Name="MisUseCases" /><FieldRef Name="UseCases" /><FieldRef Name="TechnicalComponentLookup" /><FieldRef Name="BusinessComponentLookup" /></ViewFields>
+        <FieldRef Name="LinkTitle"></FieldRef><FieldRef Name="CategoryDescription" /></ViewFields>
         <Query>
           <OrderBy>
             

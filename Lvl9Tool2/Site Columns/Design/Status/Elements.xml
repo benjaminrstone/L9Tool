@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field
+       ID="{e03c5d0a-4ca3-4a1d-bbaa-4d5ece213a75}"
+       Name="Status"
+       DisplayName="Status"
+       Type="Choice"
+       Required="True"
+       Description="Status of the current item"
+       Group="Custom Site Columns">
+
+    <CHOICES>
+      <CHOICE>New</CHOICE>
+      <CHOICE>Open</CHOICE>
+      <CHOICE>Completed</CHOICE>
+    </CHOICES>
+    <MAPPINGS>
+      <MAPPING Value="1">New</MAPPING>
+      <MAPPING Value="2">Open</MAPPING>
+      <MAPPING Value="2">Completed</MAPPING>
+    </MAPPINGS>
+    <Default>New</Default>
+  </Field>
+</Elements>

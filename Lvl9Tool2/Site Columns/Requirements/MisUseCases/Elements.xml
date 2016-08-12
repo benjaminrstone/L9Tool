@@ -7,7 +7,7 @@
        DisplayName="Mis-use Cases"
        Group="SecurityComponents"
        Description="Scenarios for improper use of the components selected"
-       Type="Text"
+       Type="Note"
        Required ="TRUE">
   </Field>
 </Elements>

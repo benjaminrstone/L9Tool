@@ -36,6 +36,27 @@
 
     <p><asp:HyperLink runat="server" 
     NavigateUrl="JavaScript:window.location = _spPageContextInfo.webAbsoluteUrl + '/Lists/Projects - Engagement/AllItems.aspx';" 
-    Text="Ben Stone" /></p>
+    Text="Engagement" /></p>
+    <p><asp:HyperLink runat="server" 
+    NavigateUrl="JavaScript:window.location = _spPageContextInfo.webAbsoluteUrl + '/Lists/Scope/AllItems.aspx';" 
+    Text="Scope" /></p>
+    <p><asp:HyperLink runat="server" 
+    NavigateUrl="JavaScript:window.location = _spPageContextInfo.webAbsoluteUrl + '/Lists/Requirements/AllItems.aspx';" 
+    Text="Requirements" /></p>
+    <p><asp:HyperLink runat="server" 
+    NavigateUrl="JavaScript:window.location = _spPageContextInfo.webAbsoluteUrl + '/Lists/Design/AllItems.aspx';" 
+    Text="Design" /></p>
+
+    <br />
+    <br />
+    <p><asp:HyperLink runat="server" 
+    NavigateUrl="JavaScript:window.location = _spPageContextInfo.webAbsoluteUrl + '/Lists/BusinessComponents/AllItems.aspx';" 
+    Text="Business Component Library" /></p>
+    <p><asp:HyperLink runat="server" 
+    NavigateUrl="JavaScript:window.location = _spPageContextInfo.webAbsoluteUrl + '/Lists/TechnicalComponents/AllItems.aspx';" 
+    Text="Technical Component Library" /></p>
+    <p><asp:HyperLink runat="server" 
+    NavigateUrl="JavaScript:window.location = _spPageContextInfo.webAbsoluteUrl + '/Lists/Controls/AllItems.aspx';" 
+    Text="Control Library" /></p>
 
 </asp:Content>

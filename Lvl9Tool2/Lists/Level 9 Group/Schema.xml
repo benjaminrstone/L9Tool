@@ -4,14 +4,30 @@
     <ContentTypes>
       
       
-    <ContentType ID="0x0100EB0F6B6D88BA4889A1881970BE137F85" Name="New Project" Group="Custom Content Types" Description="A new project" Inherits="FALSE" Version="0"><FieldRefs><FieldRef Name="Title" ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" DisplayName="Project" /><FieldRef ID="{d4df5ed4-58e0-4035-a794-a0748af6bf14}" DisplayName="Initiative Type" Required="TRUE" Description="The type of initiative this project will be" Name="InitiativeType" /><FieldRef ID="{9a7598c5-ebd1-41fc-b052-a4f43eb0da0a}" DisplayName="Exposure" Required="TRUE" Description="What exposure this initiative has" Name="Exposure" /><FieldRef ID="{3a823e55-1cbe-4b00-9948-54310843aa6a}" DisplayName="Engagement Type" Required="TRUE" Description="The type of initiative this project will be" Name="EngagementType" /><FieldRef ID="{1139e021-a2cf-4e3d-970e-cf2f0677f76f}" DisplayName="Engagement Service" Required="TRUE" Name="EngagementService" /><FieldRef ID="{82642ec8-ef9b-478f-acf9-31f7d45fbc31}" DisplayName="Project" Required="TRUE" Name="LinkTitle" ReadOnly="TRUE" /></FieldRefs></ContentType></ContentTypes>
+    
+      <ContentType ID="0x0100aba51adaa2ba4eb5bd97fa73eac5baf7" Name="ListFieldsContentType"><FieldRefs>
+      
+      
+      
+      
+      
+      
+    <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" /><FieldRef ID="{d4df5ed4-58e0-4035-a794-a0748af6bf14}" Name="InitiativeType" /><FieldRef ID="{9a7598c5-ebd1-41fc-b052-a4f43eb0da0a}" Name="Exposure" /><FieldRef ID="{3a823e55-1cbe-4b00-9948-54310843aa6a}" Name="EngagementType" /><FieldRef ID="{1139e021-a2cf-4e3d-970e-cf2f0677f76f}" Name="EngagementService" /><FieldRef ID="{32ff29b1-1847-48ae-ab4c-0b66a786423f}" Name="ScopeLink" /></FieldRefs></ContentType><ContentType ID="0x0100EB0F6B6D88BA4889A1881970BE137F85" Name="New Project" Group="Custom Content Types" Description="A new project" Inherits="FALSE" Version="0">
+        <FieldRefs>
+          
+          
+          
+          
+          
+          
+        <FieldRef Name="Title" ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" DisplayName="Project" /><FieldRef ID="{d4df5ed4-58e0-4035-a794-a0748af6bf14}" DisplayName="Initiative Type" Required="TRUE" Description="The type of initiative this project will be" Name="InitiativeType" /><FieldRef ID="{9a7598c5-ebd1-41fc-b052-a4f43eb0da0a}" DisplayName="Exposure" Required="TRUE" Description="What exposure this initiative has" Name="Exposure" /><FieldRef ID="{3a823e55-1cbe-4b00-9948-54310843aa6a}" DisplayName="Engagement Type" Required="TRUE" Description="The type of initiative this project will be" Name="EngagementType" /><FieldRef ID="{1139e021-a2cf-4e3d-970e-cf2f0677f76f}" DisplayName="Engagement Service" Required="TRUE" Name="EngagementService" /><FieldRef ID="{82642ec8-ef9b-478f-acf9-31f7d45fbc31}" DisplayName="Project" Required="TRUE" Name="LinkTitle" ReadOnly="TRUE" /></FieldRefs></ContentType></ContentTypes>
     <Fields>
       
       
       
       
       
-      <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" /><Field ID="{d4df5ed4-58e0-4035-a794-a0748af6bf14}" Name="InitiativeType" Title="InitiativeType" DisplayName="Initiative Type" Group="Engagement" Description="The type of initiative this project will be" Type="Choice" Required="TRUE"><CHOICES><CHOICE>Privacy and Security</CHOICE><CHOICE>BIOS Key Initiative</CHOICE><CHOICE>Security Engineering</CHOICE><CHOICE>Security Strategy</CHOICE><CHOICE>IT Project</CHOICE></CHOICES><MAPPINGS><MAPPING Value="1">Privacy and Security</MAPPING><MAPPING Value="2">BIOS Key Initiative</MAPPING><MAPPING Value="3">Security Engineering</MAPPING><MAPPING Value="4">Security Strategy</MAPPING><MAPPING Value="5">IT Project</MAPPING></MAPPINGS><Default>Privacy and Security</Default></Field><Field ID="{9a7598c5-ebd1-41fc-b052-a4f43eb0da0a}" Name="Exposure" DisplayName="Exposure" Description="What exposure this initiative has" Type="Choice" Required="TRUE" Group="Engagement"><CHOICES><CHOICE>Internal</CHOICE><CHOICE>External</CHOICE></CHOICES><MAPPINGS><MAPPING Value="1">Internal</MAPPING><MAPPING Value="2">External</MAPPING></MAPPINGS><Default>Internal</Default></Field><Field ID="{3a823e55-1cbe-4b00-9948-54310843aa6a}" Name="EngagementType" DisplayName="Engagement Type" Group="Engagement" Description="The type of initiative this project will be" Type="Choice" Required="TRUE"><CHOICES><CHOICE>Add/Integrate New System</CHOICE><CHOICE>Existing System</CHOICE></CHOICES><MAPPINGS><MAPPING Value="1">Add/Integrate New System</MAPPING><MAPPING Value="2">Existing System</MAPPING></MAPPINGS><Default>Add/Integrate New System</Default></Field><Field ID="{1139e021-a2cf-4e3d-970e-cf2f0677f76f}" Name="EngagementService" DisplayName="Engagement Service" Type="Choice" Required="TRUE" Group="Engagement"><CHOICES><CHOICE>All Services</CHOICE><CHOICE>Requirements Only</CHOICE><CHOICE>Design Only</CHOICE><CHOICE>Requirements and Design</CHOICE><CHOICE>Requirements and Gap Analysis</CHOICE></CHOICES><MAPPINGS><MAPPING Value="1">All Services</MAPPING><MAPPING Value="2">Requirements</MAPPING><MAPPING Value="3">Design Only</MAPPING><MAPPING Value="4">Requirements and Design</MAPPING><MAPPING Value="5">Requirements and Gap Analysis</MAPPING></MAPPINGS><Default>All Services</Default></Field></Fields>
+      <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" /><Field ID="{d4df5ed4-58e0-4035-a794-a0748af6bf14}" Name="InitiativeType" Title="InitiativeType" DisplayName="Initiative Type" Group="Engagement" Description="The type of initiative this project will be" Type="Choice" Required="TRUE"><CHOICES><CHOICE>Privacy and Security</CHOICE><CHOICE>BIOS Key Initiative</CHOICE><CHOICE>Security Engineering</CHOICE><CHOICE>Security Strategy</CHOICE><CHOICE>IT Project</CHOICE></CHOICES><MAPPINGS><MAPPING Value="1">Privacy and Security</MAPPING><MAPPING Value="2">BIOS Key Initiative</MAPPING><MAPPING Value="3">Security Engineering</MAPPING><MAPPING Value="4">Security Strategy</MAPPING><MAPPING Value="5">IT Project</MAPPING></MAPPINGS><Default>Privacy and Security</Default></Field><Field ID="{9a7598c5-ebd1-41fc-b052-a4f43eb0da0a}" Name="Exposure" DisplayName="Exposure" Description="What exposure this initiative has" Type="Choice" Required="TRUE" Group="Engagement"><CHOICES><CHOICE>Internal</CHOICE><CHOICE>External</CHOICE></CHOICES><MAPPINGS><MAPPING Value="1">Internal</MAPPING><MAPPING Value="2">External</MAPPING></MAPPINGS><Default>Internal</Default></Field><Field ID="{3a823e55-1cbe-4b00-9948-54310843aa6a}" Name="EngagementType" DisplayName="Engagement Type" Group="Engagement" Description="The type of initiative this project will be" Type="Choice" Required="TRUE"><CHOICES><CHOICE>Add/Integrate New System</CHOICE><CHOICE>Existing System</CHOICE></CHOICES><MAPPINGS><MAPPING Value="1">Add/Integrate New System</MAPPING><MAPPING Value="2">Existing System</MAPPING></MAPPINGS><Default>Add/Integrate New System</Default></Field><Field ID="{1139e021-a2cf-4e3d-970e-cf2f0677f76f}" Name="EngagementService" DisplayName="Engagement Service" Type="Choice" Required="TRUE" Group="Engagement"><CHOICES><CHOICE>All Services</CHOICE><CHOICE>Requirements Only</CHOICE><CHOICE>Design Only</CHOICE><CHOICE>Requirements and Design</CHOICE><CHOICE>Requirements and Gap Analysis</CHOICE></CHOICES><MAPPINGS><MAPPING Value="1">All Services</MAPPING><MAPPING Value="2">Requirements</MAPPING><MAPPING Value="3">Design Only</MAPPING><MAPPING Value="4">Requirements and Design</MAPPING><MAPPING Value="5">Requirements and Gap Analysis</MAPPING></MAPPINGS><Default>All Services</Default></Field><Field ID="{32ff29b1-1847-48ae-ab4c-0b66a786423f}" Name="ScopeLink" DisplayName="Scope Link" Type="URL" Required="FALSE" Group="Engagement"><Default>https://l9group-b503e78ced0bc4.sharepoint.com/sites/l9ToolTestSite/Lvl9Tool2/Lists/Scope</Default></Field></Fields>
     <Views>
       
       
@@ -23,6 +39,11 @@
         <RowLimit Paged="TRUE">30</RowLimit>
         <ViewFields>
           
+          
+          
+          
+          
+        
           
           
           
@@ -51,7 +72,12 @@
           
           
           
-        <FieldRef Name="LinkTitle" ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}"></FieldRef><FieldRef Name="InitiativeType" ID="{d4df5ed4-58e0-4035-a794-a0748af6bf14}" /><FieldRef Name="Exposure" ID="{9a7598c5-ebd1-41fc-b052-a4f43eb0da0a}" /><FieldRef Name="EngagementType" ID="{3a823e55-1cbe-4b00-9948-54310843aa6a}" /><FieldRef Name="EngagementService" ID="{1139e021-a2cf-4e3d-970e-cf2f0677f76f}" /></ViewFields>
+        
+          
+          
+          
+          
+          <FieldRef Name="LinkTitle" ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}"></FieldRef><FieldRef Name="InitiativeType" ID="{d4df5ed4-58e0-4035-a794-a0748af6bf14}" /><FieldRef Name="Exposure" ID="{9a7598c5-ebd1-41fc-b052-a4f43eb0da0a}" /><FieldRef Name="EngagementType" ID="{3a823e55-1cbe-4b00-9948-54310843aa6a}" /><FieldRef Name="EngagementService" ID="{1139e021-a2cf-4e3d-970e-cf2f0677f76f}" /><FieldRef Name="ScopeLink" /></ViewFields>
         <Query>
           <OrderBy>
             

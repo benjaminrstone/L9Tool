@@ -1,4 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
-  <ListInstance Title="Projects - Engagement" OnQuickLaunch="TRUE" TemplateType="100" Url="Lists/Projects - Engagement" Description="Active Projects for this user"></ListInstance>
+  <ListInstance Title="Projects - Engagement" OnQuickLaunch="FALSE" TemplateType="100" Url="Lists/Projects - Engagement" Description="Active Projects for this user"></ListInstance>
 </Elements>
