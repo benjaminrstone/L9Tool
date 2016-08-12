@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{663df96a-2019-4f08-aa1a-cdd3af74beba}"
+       Name="UseCaseLookup"
+       DisplayName="Use Case Lookup"
+       Type="Lookup"
+       Required="FALSE"
+       Group="Custom Site Columns"
+       Description="Lookup the use case associated with this control">
+  </Field>
+</Elements>

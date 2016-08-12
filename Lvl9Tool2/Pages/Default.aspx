@@ -46,6 +46,12 @@
     <p><asp:HyperLink runat="server" 
     NavigateUrl="JavaScript:window.location = _spPageContextInfo.webAbsoluteUrl + '/Lists/Design/AllItems.aspx';" 
     Text="Design" /></p>
+    <p><asp:HyperLink runat="server" 
+    NavigateUrl="JavaScript:window.location = _spPageContextInfo.webAbsoluteUrl + '/Lists/GapAnalysis/AllItems.aspx';" 
+    Text="Gap Analysis" /></p>
+    <p><asp:HyperLink runat="server" 
+    NavigateUrl="JavaScript:window.location = _spPageContextInfo.webAbsoluteUrl + '/Lists/Close-out/AllItems.aspx';" 
+    Text="Close-out" /></p>
 
     <br />
     <br />

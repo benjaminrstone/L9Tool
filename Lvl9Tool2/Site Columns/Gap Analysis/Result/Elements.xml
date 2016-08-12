@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{f045af93-8292-4a0a-aa29-de71f3a83b56}"
+       Name="Result"
+       DisplayName="Result"
+       Type="Choice"
+       Required="FALSE"
+       Group="Custom Site Columns"
+       Description="The results of the actions or inactions taken in response to this control">
+
+    <CHOICES>
+      <CHOICE>Pass</CHOICE>
+      <CHOICE>Fail</CHOICE>
+    </CHOICES>
+    <MAPPINGS>
+      <MAPPING Value="1">Pass</MAPPING>
+      <MAPPING Value="2">Fail</MAPPING>
+    </MAPPINGS>
+    <Default></Default>
+  </Field>
+</Elements>

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{0d61c55e-0fdb-4824-a428-d4576fc347a8}"
+       Name="ControlMaturity"
+       DisplayName="Control Maturity"
+       Type="Choice"
+       Required="FALSE"
+       Group="Custom Site Columns">
+
+    <CHOICES>
+      <CHOICE>No Control</CHOICE>
+      <CHOICE>Incomplete Control Design</CHOICE>
+      <CHOICE>Inconsistent Control Execution</CHOICE>
+      <CHOICE>Effective Control Design and Operation</CHOICE>
+      <CHOICE>Sustainable and Repeatable</CHOICE>
+    </CHOICES>
+    <MAPPINGS>
+      <MAPPING Value="1">No Control</MAPPING>
+      <MAPPING Value="2">Incomplete Control Design</MAPPING>
+      <MAPPING Value="3">Inconsistent Control Execution</MAPPING>
+      <MAPPING Value="4">Effective Control Design and Operation</MAPPING>
+      <MAPPING Value="5">Sustainable and Repeatable</MAPPING>
+    </MAPPINGS>
+    <Default>No Control</Default>
+  </Field>
+</Elements>

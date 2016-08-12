@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Projects - Gap Analysis" OnQuickLaunch="TRUE" TemplateType="100" Url="Lists/GapAnalysis" Description="Analysis of the vulnerabilities and business impacts of the specified controls"></ListInstance>
+</Elements>
