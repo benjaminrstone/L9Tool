@@ -13,18 +13,21 @@
 </asp:Content> 
 
 <asp:Content ContentPlaceHolderId="PlaceHolderMain" runat="server">
-
+    <WebPartPages:WebPartZone runat="server" FrameType="TitleBarOnly" ID="EngagementTablePart" Title="Engagement" />
+    
     <asp:HyperLink runat="server" 
-    NavigateUrl="JavaScript:window.location = _spPageContextInfo.webAbsoluteUrl + '/Pages/Default.aspx';"
-    Text="Home" />
+    NavigateUrl="JavaScript:window.location = _spPageContextInfo.webAbsoluteUrl + '/Pages/DeliverablePages/EngagementDoc.aspx?IsDlg=1';">
+        <button type="button">Create Engagement Document</button>
+    </asp:HyperLink>
 
-    <WebPartPages:WebPartZone runat="server" FrameType="TitleBarOnly" ID="EngagementTablePart" Title="loc:full" />
-
-    <asp:HyperLink runat="server" 
-    NavigateUrl="JavaScript:window.location = _spPageContextInfo.webAbsoluteUrl + '/Pages/EngagementDoc.aspx';"
-    Text="Create Engagement Document" />
-
+    <br />
+    <br />
     <asp:HyperLink runat="server" 
     NavigateUrl="JavaScript:window.location = _spPageContextInfo.webAbsoluteUrl + '/Pages/Scope.aspx';"
     Text="Scope" />
+    <br />
+    <br />
+    <asp:HyperLink runat="server" 
+    NavigateUrl="JavaScript:window.location = _spPageContextInfo.webAbsoluteUrl + '/Pages/Default.aspx';"
+    Text="Home" />
 </asp:Content>

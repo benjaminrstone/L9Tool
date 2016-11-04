@@ -40,7 +40,7 @@
 			        </metaData>
 			        <data>
 				        <properties>
-					        <property name="ListUrl">Lists/Projects - Scope</property>
+					        <property name="ListUrl">Lists/Scope</property>
 					        <property name="IsIncluded">True</property>
 					        <property name="NoDefaultStyle">True</property>
 					        <property name="Title">Scope</property>
@@ -66,7 +66,7 @@
 			        </metaData>
 			        <data>
 				        <properties>
-					        <property name="ListUrl">Lists/Projects - Requirements</property>
+					        <property name="ListUrl">Lists/Requirements</property>
 					        <property name="IsIncluded">True</property>
 					        <property name="NoDefaultStyle">True</property>
 					        <property name="Title">Requirements</property>
@@ -92,7 +92,7 @@
 			        </metaData>
 			        <data>
 				        <properties>
-					        <property name="ListUrl">Lists/Projects - Design</property>
+					        <property name="ListUrl">Lists/Design</property>
 					        <property name="IsIncluded">True</property>
 					        <property name="NoDefaultStyle">True</property>
 					        <property name="Title">Design</property>
@@ -118,7 +118,7 @@
 			        </metaData>
 			        <data>
 				        <properties>
-					        <property name="ListUrl">Lists/Projects - Gap Analysis</property>
+					        <property name="ListUrl">Lists/GapAnalysis</property>
 					        <property name="IsIncluded">True</property>
 					        <property name="NoDefaultStyle">True</property>
 					        <property name="Title">Gap Analysis</property>
@@ -144,7 +144,7 @@
 			        </metaData>
 			        <data>
 				        <properties>
-					        <property name="ListUrl">Lists/Projects - Close-out</property>
+					        <property name="ListUrl">Lists/Close-out</property>
 					        <property name="IsIncluded">True</property>
 					        <property name="NoDefaultStyle">True</property>
 					        <property name="Title">Close-out</property>
@@ -158,5 +158,7 @@
         ]]>
       </AllUsersWebPart>
     </File>
+    <File Path="Pages\DeliverablePages\EngagementDoc.aspx" Url="Pages/DeliverablePages/EngagementDoc.aspx" ReplaceContent="TRUE" />
+    <File Path="Pages\DeliverablePages\ExecutiveSummary.aspx" Url="Pages/DeliverablePages/ExecutiveSummary.aspx" ReplaceContent="TRUE" />
   </Module>
 </Elements>

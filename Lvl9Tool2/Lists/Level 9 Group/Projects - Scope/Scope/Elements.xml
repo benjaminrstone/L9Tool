@@ -1,4 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
-  <ListInstance Title="Scope" OnQuickLaunch="TRUE" TemplateType="100" FeatureId="e9f5d41f-0a16-43a5-8f6e-ff6c8a557747" Url="Lists/Scope" Description="Scope section"></ListInstance>
+  <ListInstance Title="Scope" 
+                OnQuickLaunch="TRUE" 
+                TemplateType="100" 
+                FeatureId="e9f5d41f-0a16-43a5-8f6e-ff6c8a557747" 
+                Url="Lists/Scope" 
+                Description="Scope section">
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Title">Phasero numero uno</Field>
+        </Row>
+      </Rows>
+    </Data>
+  </ListInstance>
 </Elements>

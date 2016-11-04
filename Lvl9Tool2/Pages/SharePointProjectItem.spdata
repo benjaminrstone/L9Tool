@@ -9,5 +9,7 @@
     <ProjectItemFile Source="Design.aspx" Target="Pages\" Type="ElementFile" />
     <ProjectItemFile Source="GapAnalysis.aspx" Target="Pages\" Type="ElementFile" />
     <ProjectItemFile Source="CloseOut.aspx" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="DeliverablePages\EngagementDoc.aspx" Target="Pages\DeliverablePages\" Type="ElementFile" />
+    <ProjectItemFile Source="DeliverablePages\ExecutiveSummary.aspx" Target="Pages\DeliverablePages\" Type="ElementFile" />
   </Files>
 </ProjectItem>

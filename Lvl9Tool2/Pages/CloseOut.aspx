@@ -12,9 +12,20 @@
 </asp:Content> 
 
 <asp:Content ContentPlaceHolderId="PlaceHolderMain" runat="server">
+    <WebPartPages:WebPartZone runat="server" FrameType="TitleBarOnly" ID="CloseOutTablePart" Title="Close Out" />
+
+    <br />
+    <br />
+    <asp:HyperLink runat="server" 
+    NavigateUrl="JavaScript:window.location = _spPageContextInfo.webAbsoluteUrl + '/Pages/DeliverablePages/ExecutiveSummary.aspx?IsDlg=1';">
+        <button type="button">Create Executive Summary</button>
+    </asp:HyperLink>
+    <br />
+    <br />
+
     <asp:HyperLink runat="server" 
     NavigateUrl="JavaScript:window.location = _spPageContextInfo.webAbsoluteUrl + '/Pages/Default.aspx';"
     Text="Home" />
 
-    <WebPartPages:WebPartZone runat="server" FrameType="TitleBarOnly" ID="CloseOutTablePart" Title="Close Out" />
+    
 </asp:Content>

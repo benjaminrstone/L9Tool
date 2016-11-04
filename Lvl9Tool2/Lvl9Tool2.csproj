@@ -62,6 +62,9 @@
     <Content Include="Features\Feature7\Feature7.Template.xml">
       <DependentUpon>Feature7.feature</DependentUpon>
     </Content>
+    <Content Include="Features\Feature8\Feature8.Template.xml">
+      <DependentUpon>Feature8.feature</DependentUpon>
+    </Content>
     <Content Include="Lists\Level 9 Group\Elements.xml" />
     <Content Include="Lists\Level 9 Group\Projects - Close-out\Elements.xml" />
     <Content Include="Lists\Level 9 Group\Projects - Close-out\Close-out\Elements.xml" />
@@ -86,6 +89,8 @@
     <Content Include="Lists\LookupList\Schema.xml" />
     <Content Include="Lists\LookupList\TechnicalComponents\Elements.xml" />
     <Content Include="Pages\CloseOut.aspx" />
+    <Content Include="Pages\DeliverablePages\EngagementDoc.aspx" />
+    <Content Include="Pages\DeliverablePages\ExecutiveSummary.aspx" />
     <Content Include="Pages\Design.aspx" />
     <Content Include="Pages\Engagement.aspx" />
     <Content Include="Pages\GapAnalysis.aspx" />
@@ -134,6 +139,9 @@
     </None>
     <None Include="Features\Feature7\Feature7.feature">
       <FeatureId>{1ede45be-73e3-49cf-b986-261880dc1bee}</FeatureId>
+    </None>
+    <None Include="Features\Feature8\Feature8.feature">
+      <FeatureId>{0e77b95d-db98-415d-9316-9079e6ccff9c}</FeatureId>
     </None>
     <None Include="Lists\Level 9 Group\Projects - Close-out\Close-out\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{9c20f017-f487-46d2-bf30-cc91761fd292}</SharePointProjectItemId>
@@ -318,9 +326,7 @@
       <SubType>Designer</SubType>
     </XamlAppDef>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Pages\DeliverablePages\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

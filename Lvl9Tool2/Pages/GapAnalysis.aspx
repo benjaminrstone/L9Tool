@@ -12,13 +12,22 @@
 </asp:Content> 
 
 <asp:Content ContentPlaceHolderId="PlaceHolderMain" runat="server">
+    <WebPartPages:WebPartZone runat="server" FrameType="TitleBarOnly" ID="GapAnalysisTablePart" Title="Gap Analysis" />
+
+    <asp:HyperLink runat="server" 
+    NavigateUrl="JavaScript:window.location = _spPageContextInfo.webAbsoluteUrl + '/Pages/GapAnalysis/NewForm.aspx';"
+    Text="New" />
+    <br />
+    <br />
+    <br />
+    <br />
+    <asp:HyperLink runat="server" 
+    NavigateUrl="JavaScript:window.location = _spPageContextInfo.webAbsoluteUrl + '/Pages/CloseOut.aspx';"
+    Text="Close-out" />
+    <br />
+    <br />
     <asp:HyperLink runat="server" 
     NavigateUrl="JavaScript:window.location = _spPageContextInfo.webAbsoluteUrl + '/Pages/Default.aspx';"
     Text="Home" />
 
-    <WebPartPages:WebPartZone runat="server" FrameType="TitleBarOnly" ID="GapAnalysisTablePart" Title="Gap Analysis" />
-
-    <asp:HyperLink runat="server" 
-    NavigateUrl="JavaScript:window.location = _spPageContextInfo.webAbsoluteUrl + '/Pages/CloseOut.aspx';"
-    Text="Close-out" />
 </asp:Content>

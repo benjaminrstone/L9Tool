@@ -12,14 +12,22 @@
 </asp:Content> 
 
 <asp:Content ContentPlaceHolderId="PlaceHolderMain" runat="server">
+    <WebPartPages:WebPartZone runat="server" FrameType="TitleBarOnly" ID="ScopeTablePart" Title="loc:full" />
 
     <asp:HyperLink runat="server" 
-    NavigateUrl="JavaScript:window.location = _spPageContextInfo.webAbsoluteUrl + '/Pages/Default.aspx';"
-    Text="Home" />
-
-    <WebPartPages:WebPartZone runat="server" FrameType="TitleBarOnly" ID="ScopeTablePart" Title="Scope" />
-
+    NavigateUrl="JavaScript:window.location = _spPageContextInfo.webAbsoluteUrl + '/Pages/Scope/NewForm.aspx';"
+    Text="New" />
+    <br />
+    <br />
+    <br />
+    <br />
     <asp:HyperLink runat="server" 
     NavigateUrl="JavaScript:window.location = _spPageContextInfo.webAbsoluteUrl + '/Pages/Requirements.aspx';"
     Text="Requirements" />
+    
+    <br />
+    <br />
+    <asp:HyperLink runat="server" 
+    NavigateUrl="JavaScript:window.location = _spPageContextInfo.webAbsoluteUrl + '/Pages/Default.aspx';"
+    Text="Home" />
 </asp:Content>
