@@ -85,12 +85,17 @@
     <Content Include="Lists\LookupList\Elements.xml" />
     <Content Include="Lists\LookupList\Schema.xml" />
     <Content Include="Lists\LookupList\TechnicalComponents\Elements.xml" />
+    <Content Include="Pages\CloseOut.aspx" />
+    <Content Include="Pages\Design.aspx" />
+    <Content Include="Pages\Engagement.aspx" />
+    <Content Include="Pages\GapAnalysis.aspx" />
+    <Content Include="Pages\Requirements.aspx" />
+    <Content Include="Pages\Scope.aspx" />
     <Content Include="Site Columns\Design\Status\Elements.xml" />
     <Content Include="Site Columns\Engagement\EngagementService\Elements.xml" />
     <Content Include="Site Columns\Engagement\EngagementType\Elements.xml" />
     <Content Include="Site Columns\Engagement\Exposure\Elements.xml" />
     <Content Include="Site Columns\Engagement\InitiativeType\Elements.xml" />
-    <Content Include="Site Columns\Engagement\ScopeLink\Elements.xml" />
     <Content Include="Site Columns\Gap Analysis\ControlLookup\Elements.xml" />
     <Content Include="Site Columns\Gap Analysis\ControlMaturity\Elements.xml" />
     <Content Include="Site Columns\Gap Analysis\Description\Elements.xml" />
@@ -198,9 +203,6 @@
     </None>
     <None Include="Site Columns\Engagement\InitiativeType\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{5b5c88dd-a455-4dcf-85ab-2d99ba94cf2b}</SharePointProjectItemId>
-    </None>
-    <None Include="Site Columns\Engagement\ScopeLink\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{cf0b0ed2-f730-4663-8cc1-9620da328a88}</SharePointProjectItemId>
     </None>
     <None Include="Site Columns\Gap Analysis\ControlLookup\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{51ebf642-6e48-450b-852d-8eabe643b7d7}</SharePointProjectItemId>
@@ -316,7 +318,9 @@
       <SubType>Designer</SubType>
     </XamlAppDef>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Pages\DeliverablePages\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

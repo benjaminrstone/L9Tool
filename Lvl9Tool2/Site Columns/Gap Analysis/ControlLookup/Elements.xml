@@ -3,7 +3,7 @@
   <Field
        ID="{560e6903-ffaa-4781-a694-66023b80e417}"
        Name="ControlLookup"
-       DisplayName="Control Lookup"
+       DisplayName="Control"
        Type="Lookup"
        Required="FALSE"
        Group="Custom Site Columns">

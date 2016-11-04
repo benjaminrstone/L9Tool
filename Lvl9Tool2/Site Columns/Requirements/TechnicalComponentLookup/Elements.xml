@@ -3,7 +3,7 @@
   <Field
        ID="{898b783e-a5bc-41dc-8e59-86781803fa3c}"
        Name="TechnicalComponentLookup"
-       DisplayName="Technical Component Lookup"
+       DisplayName="Technical Component"
        Type="Lookup"
        Required="FALSE"
        Group="Custom Site Columns">

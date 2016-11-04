@@ -29,3 +29,7 @@ function initializePage()
         alert('Failed to get user name. Error:' + args.get_message());
     }
 }
+
+function onFail(sender, args) {
+    alert('Yikes. Error:' + args.get_message());
+}

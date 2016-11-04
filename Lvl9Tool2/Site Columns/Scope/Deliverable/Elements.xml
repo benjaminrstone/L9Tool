@@ -19,6 +19,6 @@
       <MAPPING Value="2">Design Recommendations</MAPPING>
       <MAPPING Value="3">Gap Analysis</MAPPING>
     </MAPPINGS>
-    <Default>None</Default>
+    <Default></Default>
   </Field>
 </Elements>

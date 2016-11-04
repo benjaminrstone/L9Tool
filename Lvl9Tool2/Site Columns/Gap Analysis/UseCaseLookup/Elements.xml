@@ -3,7 +3,7 @@
   <Field
        ID="{663df96a-2019-4f08-aa1a-cdd3af74beba}"
        Name="UseCaseLookup"
-       DisplayName="Use Case Lookup"
+       DisplayName="(Mis)Use Case"
        Type="Lookup"
        Required="FALSE"
        Group="Custom Site Columns"

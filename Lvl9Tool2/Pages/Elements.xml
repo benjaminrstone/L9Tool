@@ -2,5 +2,161 @@
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
   <Module Name="Pages">
     <File Path="Pages\Default.aspx" Url="Pages/Default.aspx" ReplaceContent="TRUE" />
+    <File Path="Pages\Engagement.aspx" Url="Pages/Engagement.aspx" ReplaceContent="TRUE">
+      <AllUsersWebPart WebPartZoneID="EngagementTablePart" WebPartOrder="1">
+        <![CDATA[
+          <webParts>
+            <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+			        <metaData>
+				        <type name="Microsoft.SharePoint.WebPartPages.XsltListViewWebPart, 
+										         Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, 
+										         PublicKeyToken=71e9bce111e9429c" />
+			        </metaData>
+			        <data>
+				        <properties>
+					        <property name="ListUrl">Lists/Projects - Engagement</property>
+					        <property name="IsIncluded">True</property>
+					        <property name="NoDefaultStyle">True</property>
+					        <property name="Title">Engagement</property>
+					        <property name="PageType">PAGE_NORMALVIEW</property>
+					        <property name="Default">False</property>
+					        <property name="ViewContentTypeId">0x</property>
+				        </properties>
+			        </data>
+		        </webPart>
+          </webParts>
+        ]]>
+      </AllUsersWebPart>
+    </File>
+    <File Path="Pages\Scope.aspx" Url="Pages/Scope.aspx" ReplaceContent="TRUE">
+      <AllUsersWebPart WebPartZoneID="ScopeTablePart" WebPartOrder="1">
+        <![CDATA[
+          <webParts>
+            <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+			        <metaData>
+				        <type name="Microsoft.SharePoint.WebPartPages.XsltListViewWebPart, 
+										         Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, 
+										         PublicKeyToken=71e9bce111e9429c" />
+			        </metaData>
+			        <data>
+				        <properties>
+					        <property name="ListUrl">Lists/Projects - Scope</property>
+					        <property name="IsIncluded">True</property>
+					        <property name="NoDefaultStyle">True</property>
+					        <property name="Title">Scope</property>
+					        <property name="PageType">PAGE_NORMALVIEW</property>
+					        <property name="Default">False</property>
+					        <property name="ViewContentTypeId">0x</property>
+				        </properties>
+			        </data>
+		        </webPart>
+          </webParts>
+        ]]>
+      </AllUsersWebPart>
+    </File>
+    <File Path="Pages\Requirements.aspx" Url="Pages/Requirements.aspx" ReplaceContent="TRUE">
+      <AllUsersWebPart WebPartZoneID="RequirementsTablePart" WebPartOrder="1">
+        <![CDATA[
+          <webParts>
+            <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+			        <metaData>
+				        <type name="Microsoft.SharePoint.WebPartPages.XsltListViewWebPart, 
+										         Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, 
+										         PublicKeyToken=71e9bce111e9429c" />
+			        </metaData>
+			        <data>
+				        <properties>
+					        <property name="ListUrl">Lists/Projects - Requirements</property>
+					        <property name="IsIncluded">True</property>
+					        <property name="NoDefaultStyle">True</property>
+					        <property name="Title">Requirements</property>
+					        <property name="PageType">PAGE_NORMALVIEW</property>
+					        <property name="Default">False</property>
+					        <property name="ViewContentTypeId">0x</property>
+				        </properties>
+			        </data>
+		        </webPart>
+          </webParts>
+        ]]>
+      </AllUsersWebPart>
+    </File>
+    <File Path="Pages\Design.aspx" Url="Pages/Design.aspx" ReplaceContent="TRUE">
+      <AllUsersWebPart WebPartZoneID="DesignTablePart" WebPartOrder="1">
+        <![CDATA[
+          <webParts>
+            <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+			        <metaData>
+				        <type name="Microsoft.SharePoint.WebPartPages.XsltListViewWebPart, 
+										         Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, 
+										         PublicKeyToken=71e9bce111e9429c" />
+			        </metaData>
+			        <data>
+				        <properties>
+					        <property name="ListUrl">Lists/Projects - Design</property>
+					        <property name="IsIncluded">True</property>
+					        <property name="NoDefaultStyle">True</property>
+					        <property name="Title">Design</property>
+					        <property name="PageType">PAGE_NORMALVIEW</property>
+					        <property name="Default">False</property>
+					        <property name="ViewContentTypeId">0x</property>
+				        </properties>
+			        </data>
+		        </webPart>
+          </webParts>
+        ]]>
+      </AllUsersWebPart>
+    </File>
+    <File Path="Pages\GapAnalysis.aspx" Url="Pages/GapAnalysis.aspx" ReplaceContent="TRUE">
+      <AllUsersWebPart WebPartZoneID="GapAnalysisTablePart" WebPartOrder="1">
+        <![CDATA[
+          <webParts>
+            <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+			        <metaData>
+				        <type name="Microsoft.SharePoint.WebPartPages.XsltListViewWebPart, 
+										         Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, 
+										         PublicKeyToken=71e9bce111e9429c" />
+			        </metaData>
+			        <data>
+				        <properties>
+					        <property name="ListUrl">Lists/Projects - Gap Analysis</property>
+					        <property name="IsIncluded">True</property>
+					        <property name="NoDefaultStyle">True</property>
+					        <property name="Title">Gap Analysis</property>
+					        <property name="PageType">PAGE_NORMALVIEW</property>
+					        <property name="Default">False</property>
+					        <property name="ViewContentTypeId">0x</property>
+				        </properties>
+			        </data>
+		        </webPart>
+          </webParts>
+        ]]>
+      </AllUsersWebPart>
+    </File>
+    <File Path="Pages\CloseOut.aspx" Url="Pages/CloseOut.aspx" ReplaceContent="TRUE">
+      <AllUsersWebPart WebPartZoneID="Close-outTablePart" WebPartOrder="1">
+        <![CDATA[
+          <webParts>
+            <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+			        <metaData>
+				        <type name="Microsoft.SharePoint.WebPartPages.XsltListViewWebPart, 
+										         Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, 
+										         PublicKeyToken=71e9bce111e9429c" />
+			        </metaData>
+			        <data>
+				        <properties>
+					        <property name="ListUrl">Lists/Projects - Close-out</property>
+					        <property name="IsIncluded">True</property>
+					        <property name="NoDefaultStyle">True</property>
+					        <property name="Title">Close-out</property>
+					        <property name="PageType">PAGE_NORMALVIEW</property>
+					        <property name="Default">False</property>
+					        <property name="ViewContentTypeId">0x</property>
+				        </properties>
+			        </data>
+		        </webPart>
+          </webParts>
+        ]]>
+      </AllUsersWebPart>
+    </File>
   </Module>
 </Elements>

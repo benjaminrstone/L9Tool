@@ -3,5 +3,11 @@
   <Files>
     <ProjectItemFile Source="Elements.xml" Target="Pages\" Type="ElementManifest" />
     <ProjectItemFile Source="Default.aspx" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="Engagement.aspx" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="Scope.aspx" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="Requirements.aspx" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="Design.aspx" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="GapAnalysis.aspx" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="CloseOut.aspx" Target="Pages\" Type="ElementFile" />
   </Files>
 </ProjectItem>

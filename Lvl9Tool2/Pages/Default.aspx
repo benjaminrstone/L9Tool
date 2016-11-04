@@ -35,34 +35,36 @@
     </div>
 
     <p><asp:HyperLink runat="server" 
-    NavigateUrl="JavaScript:window.location = _spPageContextInfo.webAbsoluteUrl + '/Lists/Projects - Engagement/AllItems.aspx';" 
+    NavigateUrl="JavaScript:window.location = _spPageContextInfo.webAbsoluteUrl + '/Pages/Engagement.aspx';" 
     Text="Engagement" /></p>
     <p><asp:HyperLink runat="server" 
-    NavigateUrl="JavaScript:window.location = _spPageContextInfo.webAbsoluteUrl + '/Lists/Scope/AllItems.aspx';" 
+    NavigateUrl="JavaScript:window.location = _spPageContextInfo.webAbsoluteUrl + '/Pages/Scope.aspx';" 
     Text="Scope" /></p>
     <p><asp:HyperLink runat="server" 
-    NavigateUrl="JavaScript:window.location = _spPageContextInfo.webAbsoluteUrl + '/Lists/Requirements/AllItems.aspx';" 
+    NavigateUrl="JavaScript:window.location = _spPageContextInfo.webAbsoluteUrl + '/Pages/Requirements.aspx';" 
     Text="Requirements" /></p>
     <p><asp:HyperLink runat="server" 
-    NavigateUrl="JavaScript:window.location = _spPageContextInfo.webAbsoluteUrl + '/Lists/Design/AllItems.aspx';" 
+    NavigateUrl="JavaScript:window.location = _spPageContextInfo.webAbsoluteUrl + '/Pages/Design.aspx';" 
     Text="Design" /></p>
     <p><asp:HyperLink runat="server" 
-    NavigateUrl="JavaScript:window.location = _spPageContextInfo.webAbsoluteUrl + '/Lists/GapAnalysis/AllItems.aspx';" 
+    NavigateUrl="JavaScript:window.location = _spPageContextInfo.webAbsoluteUrl + '/Pages/GapAnalysis.aspx';" 
     Text="Gap Analysis" /></p>
     <p><asp:HyperLink runat="server" 
-    NavigateUrl="JavaScript:window.location = _spPageContextInfo.webAbsoluteUrl + '/Lists/Close-out/AllItems.aspx';" 
+    NavigateUrl="JavaScript:window.location = _spPageContextInfo.webAbsoluteUrl + '/Pages/CloseOut.aspx';" 
     Text="Close-out" /></p>
+
 
     <br />
     <br />
+    <h5>Libraries</h5>
     <p><asp:HyperLink runat="server" 
     NavigateUrl="JavaScript:window.location = _spPageContextInfo.webAbsoluteUrl + '/Lists/BusinessComponents/AllItems.aspx';" 
-    Text="Business Component Library" /></p>
+    Text="Business Components" /></p>
     <p><asp:HyperLink runat="server" 
     NavigateUrl="JavaScript:window.location = _spPageContextInfo.webAbsoluteUrl + '/Lists/TechnicalComponents/AllItems.aspx';" 
-    Text="Technical Component Library" /></p>
+    Text="Technical Components" /></p>
     <p><asp:HyperLink runat="server" 
     NavigateUrl="JavaScript:window.location = _spPageContextInfo.webAbsoluteUrl + '/Lists/Controls/AllItems.aspx';" 
-    Text="Control Library" /></p>
+    Text="Controls" /></p>
 
 </asp:Content>

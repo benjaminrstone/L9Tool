@@ -4,12 +4,12 @@
     <ContentTypes>
       
       
-    <ContentType ID="0x010087e6bdfdf8734d76bcbb6538c50d8ded" Name="ListFieldsContentType"><FieldRefs><FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" /><FieldRef ID="{d648b07c-06e0-43d5-a589-26a94e521844}" Name="Phase" /><FieldRef ID="{ddffc3bb-2c6f-4353-af9d-21b4e05a1cdb}" Name="Deliverable" /></FieldRefs></ContentType><ContentTypeRef ID="0x01">
+    <ContentType ID="0x010087e6bdfdf8734d76bcbb6538c50d8ded" Name="ListFieldsContentType"><FieldRefs><FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" /><FieldRef ID="{d648b07c-06e0-43d5-a589-26a94e521844}" Name="Phase" /><FieldRef ID="{ddffc3bb-2c6f-4353-af9d-21b4e05a1cdb}" Name="Deliverable" /><FieldRef ID="{35363960-D998-4aad-B7E8-058DFE2C669E}" Name="Completed" /></FieldRefs></ContentType><ContentTypeRef ID="0x01">
         <Folder TargetName="Item" />
       </ContentTypeRef><ContentTypeRef ID="0x0120" /></ContentTypes>
     <Fields>
       
-    <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" /><Field ID="{d648b07c-06e0-43d5-a589-26a94e521844}" Name="Phase" DisplayName="Phase" Type="Choice" Required="FALSE" Group="Scope" Description="A phase of the project"><CHOICES><CHOICE>Qualified Idea</CHOICE><CHOICE>Concept</CHOICE><CHOICE>Definition</CHOICE><CHOICE>Dev-Build</CHOICE><CHOICE>Deployment</CHOICE><CHOICE>Close-Out</CHOICE></CHOICES><MAPPINGS><MAPPING Value="1">Qualified Idea</MAPPING><MAPPING Value="2">Concept</MAPPING><MAPPING Value="3">Definition</MAPPING><MAPPING Value="4">Dev-Build</MAPPING><MAPPING Value="5">Deployment</MAPPING><MAPPING Value="6">Close-Out</MAPPING></MAPPINGS><Default>Qualified Idea</Default></Field><Field ID="{ddffc3bb-2c6f-4353-af9d-21b4e05a1cdb}" Name="Deliverable" DisplayName="Deliverable" Type="Choice" Required="FALSE" Group="Scope" Description="The deliverable associated with this phase"><CHOICES><CHOICE>Requirements</CHOICE><CHOICE>Design Recommendations</CHOICE><CHOICE>Gap Analysis</CHOICE></CHOICES><MAPPINGS><MAPPING Value="1">Requirements</MAPPING><MAPPING Value="2">Design Recommendations</MAPPING><MAPPING Value="3">Gap Analysis</MAPPING></MAPPINGS><Default>None</Default></Field></Fields>
+    <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" /><Field ID="{d648b07c-06e0-43d5-a589-26a94e521844}" Name="Phase" DisplayName="Phase" Type="Choice" Required="TRUE" Group="Scope" Description="A phase of the project"><CHOICES><CHOICE>Qualified Idea</CHOICE><CHOICE>Concept</CHOICE><CHOICE>Definition</CHOICE><CHOICE>Dev-Build</CHOICE><CHOICE>Deployment</CHOICE><CHOICE>Close-Out</CHOICE></CHOICES><MAPPINGS><MAPPING Value="1">Qualified Idea</MAPPING><MAPPING Value="2">Concept</MAPPING><MAPPING Value="3">Definition</MAPPING><MAPPING Value="4">Dev-Build</MAPPING><MAPPING Value="5">Deployment</MAPPING><MAPPING Value="6">Close-Out</MAPPING></MAPPINGS><Default>Qualified Idea</Default></Field><Field ID="{ddffc3bb-2c6f-4353-af9d-21b4e05a1cdb}" Name="Deliverable" DisplayName="Deliverable" Type="Choice" Required="FALSE" Group="Scope" Description="The deliverable associated with this phase"><CHOICES><CHOICE>Requirements</CHOICE><CHOICE>Design Recommendations</CHOICE><CHOICE>Gap Analysis</CHOICE></CHOICES><MAPPINGS><MAPPING Value="1">Requirements</MAPPING><MAPPING Value="2">Design Recommendations</MAPPING><MAPPING Value="3">Gap Analysis</MAPPING></MAPPINGS><Default></Default></Field><Field ID="{35363960-D998-4aad-B7E8-058DFE2C669E}" Name="Completed" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Completed" Group="$Resources:core,Base_Columns;" Type="Boolean" DisplayName="Completed" Hidden="FALSE" Sealed="TRUE" DelayActivateTemplateBinding="GROUP,SPSPERS" Required="TRUE"><Default>FALSE</Default></Field></Fields>
     <Views>
       
       
@@ -37,7 +37,7 @@
         <RowLimit Paged="TRUE">30</RowLimit>
         <ViewFields>
           
-        <FieldRef Name="LinkTitle"></FieldRef><FieldRef Name="Phase" /><FieldRef Name="Deliverable" /></ViewFields>
+        <FieldRef Name="LinkTitle"></FieldRef><FieldRef Name="Phase" /><FieldRef Name="Deliverable" /><FieldRef Name="Completed" /></ViewFields>
         <Query>
           <OrderBy>
             
