@@ -15,7 +15,7 @@
     <WebPartPages:WebPartZone runat="server" FrameType="TitleBarOnly" ID="ScopeTablePart" Title="loc:full" />
 
     <asp:HyperLink runat="server" 
-    NavigateUrl="JavaScript:window.location = _spPageContextInfo.webAbsoluteUrl + '/Pages/Scope/NewForm.aspx';"
+    NavigateUrl="JavaScript:window.location = _spPageContextInfo.webAbsoluteUrl + '/Lists/Scope/NewForm.aspx';"
     Text="New" />
     <br />
     <br />

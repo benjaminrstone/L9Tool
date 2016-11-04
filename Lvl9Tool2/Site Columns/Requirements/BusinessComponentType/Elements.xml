@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{ede92538-af14-4caa-b106-9ad3ae7e492b}"
+       Name="BusinessComponentType"
+       DisplayName="Business Component Type"
+       Type="Choice"
+       Required="TRUE"
+       Group="Custom Site Columns">
+
+    <CHOICES>
+      <CHOICE>Business Entity</CHOICE>
+      <CHOICE>Transaction</CHOICE>
+      <CHOICE>Actor</CHOICE>
+      <CHOICE>Service</CHOICE>
+      <CHOICE>Process</CHOICE>
+      <CHOICE>Trust Boundary</CHOICE>
+      <CHOICE>Device</CHOICE>
+      <CHOICE>Virtual Device</CHOICE>
+    </CHOICES>
+    <MAPPINGS>
+      <MAPPING Value="1">Business Entity</MAPPING>
+      <MAPPING Value="2">Transaction</MAPPING>
+      <MAPPING Value="3">Actor</MAPPING>
+      <MAPPING Value="4">Service</MAPPING>
+      <MAPPING Value="5">Process</MAPPING>
+      <MAPPING Value="5">Trust Boundary</MAPPING>
+      <MAPPING Value="5">Device</MAPPING>
+      <MAPPING Value="5">Virtual Device</MAPPING>
+    </MAPPINGS>
+    <Default>Business Entity</Default>
+  </Field>
+</Elements>

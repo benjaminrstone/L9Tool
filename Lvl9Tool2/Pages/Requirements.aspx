@@ -15,7 +15,21 @@
     <WebPartPages:WebPartZone runat="server" FrameType="TitleBarOnly" ID="RequirementsTablePart" Title="Requirements" />
 
     <asp:HyperLink runat="server" 
-    NavigateUrl="JavaScript:window.location = _spPageContextInfo.webAbsoluteUrl + '/Pages/Requirements/NewForm.aspx';"
+    NavigateUrl="JavaScript:window.location = _spPageContextInfo.webAbsoluteUrl + '/Lists/Use Cases/AllItems.aspx';"
+    Text="Use Cases" />
+    <br />
+    <asp:HyperLink runat="server" 
+    NavigateUrl="JavaScript:window.location = _spPageContextInfo.webAbsoluteUrl + '/Lists/Technical Components/AllItems.aspx';"
+    Text="Technical Components" />
+    <br />
+    <asp:HyperLink runat="server" 
+    NavigateUrl="JavaScript:window.location = _spPageContextInfo.webAbsoluteUrl + '/Lists/Business Components/AllItems.aspx';"
+    Text="Business Components" />
+    <br />
+
+
+    <asp:HyperLink runat="server" 
+    NavigateUrl="JavaScript:window.location = _spPageContextInfo.webAbsoluteUrl + '/Lists/Requirements/NewForm.aspx';"
     Text="New" />
     <br />
     <br />

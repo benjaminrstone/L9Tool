@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{68b3c58e-d1b8-455b-8719-f8e5d3eceb84}"
+       Name="UseCaseType"
+       DisplayName="Use Case Type"
+       Type="Choice"
+       Required="True"
+       Group="Requirements">
+    <CHOICES>
+      <CHOICE>Use Case</CHOICE>
+      <CHOICE>Misuse Case</CHOICE>
+    </CHOICES>
+    <MAPPINGS>
+      <MAPPING Value="1">Use Case</MAPPING>
+      <MAPPING Value="2">Misuse Case</MAPPING>
+    </MAPPINGS>
+    <Default>Use Case</Default>
+  </Field>
+</Elements>

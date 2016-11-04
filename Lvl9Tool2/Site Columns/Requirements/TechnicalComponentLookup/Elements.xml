@@ -5,6 +5,8 @@
        Name="TechnicalComponentLookup"
        DisplayName="Technical Component"
        Type="Lookup"
+       List="Lists/TechnicalComponents"
+       ShowField="Title"
        Required="FALSE"
        Group="Custom Site Columns">
   </Field>

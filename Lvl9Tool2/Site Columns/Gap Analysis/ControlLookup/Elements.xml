@@ -5,6 +5,8 @@
        Name="ControlLookup"
        DisplayName="Control"
        Type="Lookup"
+       List="Lists/Controls"
+       ShowField="Title"
        Required="FALSE"
        Group="Custom Site Columns">
   </Field>

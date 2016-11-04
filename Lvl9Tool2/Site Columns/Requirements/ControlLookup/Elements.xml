@@ -2,10 +2,10 @@
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
   <Field
        ID="{8c669bba-967c-4c3b-bdbc-1b88a9e7e519}"
-       Name="BusinessComponentLookup"
-       DisplayName="Business Component"
+       Name="ControlLookup"
+       DisplayName="Control"
        Type="Lookup"
-       List="Lists/BusinessComponents"
+       List="Lists/Controls"
        ShowField="Title"
        Required="FALSE"
        Group="Custom Site Columns">

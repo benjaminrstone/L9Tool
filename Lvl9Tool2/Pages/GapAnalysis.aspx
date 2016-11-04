@@ -15,7 +15,7 @@
     <WebPartPages:WebPartZone runat="server" FrameType="TitleBarOnly" ID="GapAnalysisTablePart" Title="Gap Analysis" />
 
     <asp:HyperLink runat="server" 
-    NavigateUrl="JavaScript:window.location = _spPageContextInfo.webAbsoluteUrl + '/Pages/GapAnalysis/NewForm.aspx';"
+    NavigateUrl="JavaScript:window.location = _spPageContextInfo.webAbsoluteUrl + '/Lists/GapAnalysis/NewForm.aspx';"
     Text="New" />
     <br />
     <br />

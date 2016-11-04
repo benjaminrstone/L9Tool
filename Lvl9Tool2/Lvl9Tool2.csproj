@@ -44,6 +44,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="Content Types\New Project\Elements.xml" />
+    <Content Include="Features\Feature10\Feature10.Template.xml">
+      <DependentUpon>Feature10.feature</DependentUpon>
+    </Content>
     <Content Include="Features\Feature2\Feature2.Template.xml">
       <DependentUpon>Feature2.feature</DependentUpon>
     </Content>
@@ -65,6 +68,9 @@
     <Content Include="Features\Feature8\Feature8.Template.xml">
       <DependentUpon>Feature8.feature</DependentUpon>
     </Content>
+    <Content Include="Features\Feature9\Feature9.Template.xml">
+      <DependentUpon>Feature9.feature</DependentUpon>
+    </Content>
     <Content Include="Lists\Level 9 Group\Elements.xml" />
     <Content Include="Lists\Level 9 Group\Projects - Close-out\Elements.xml" />
     <Content Include="Lists\Level 9 Group\Projects - Close-out\Close-out\Elements.xml" />
@@ -82,6 +88,15 @@
     <Content Include="Lists\Level 9 Group\Projects - Scope\Elements.xml" />
     <Content Include="Lists\Level 9 Group\Projects - Scope\Schema.xml" />
     <Content Include="Lists\Level 9 Group\Projects - Scope\Scope\Elements.xml" />
+    <Content Include="Lists\Level 9 Group\Requirements\Business Components\Business Components Instance\Elements.xml" />
+    <Content Include="Lists\Level 9 Group\Requirements\Business Components\Elements.xml" />
+    <Content Include="Lists\Level 9 Group\Requirements\Business Components\Schema.xml" />
+    <Content Include="Lists\Level 9 Group\Requirements\Technical Components\Elements.xml" />
+    <Content Include="Lists\Level 9 Group\Requirements\Technical Components\Schema.xml" />
+    <Content Include="Lists\Level 9 Group\Requirements\Technical Components\Technical Components Instance\Elements.xml" />
+    <Content Include="Lists\Level 9 Group\Requirements\Use cases\Elements.xml" />
+    <Content Include="Lists\Level 9 Group\Requirements\Use cases\Schema.xml" />
+    <Content Include="Lists\Level 9 Group\Requirements\Use cases\Use cases Instance\Elements.xml" />
     <Content Include="Lists\Level 9 Group\Schema.xml" />
     <Content Include="Lists\LookupList\BusinessComponents\Elements.xml" />
     <Content Include="Lists\LookupList\Controls\Elements.xml" />
@@ -107,20 +122,27 @@
     <Content Include="Site Columns\Gap Analysis\RemediationPlan\Elements.xml" />
     <Content Include="Site Columns\Gap Analysis\Result\Elements.xml" />
     <Content Include="Site Columns\Gap Analysis\UseCaseLookup\Elements.xml" />
+    <Content Include="Site Columns\Requirements\BusinessComponentType\Elements.xml" />
+    <Content Include="Site Columns\Requirements\ControlLookup\Elements.xml" />
     <Content Include="Site Columns\Requirements\BusinessComponentLookup\Elements.xml" />
     <Content Include="Site Columns\Requirements\MisUseCases\Elements.xml">
       <SubType>Designer</SubType>
     </Content>
     <Content Include="Site Columns\Requirements\TechnicalComponentLookup\Elements.xml" />
+    <Content Include="Site Columns\Requirements\TechnicalLayer\Elements.xml" />
+    <Content Include="Site Columns\Requirements\UseCaseType\Elements.xml" />
     <Content Include="Site Columns\Scope\Deliverable\Elements.xml" />
     <Content Include="Site Columns\Scope\Phase\Elements.xml" />
-    <Content Include="Site Columns\Requirements\UseCases\Elements.xml">
+    <Content Include="Site Columns\Requirements\UseCaseDescription\Elements.xml">
       <SubType>Designer</SubType>
     </Content>
     <Content Include="Workflows\WorkflowHistoryList\Elements.xml" />
     <Content Include="Workflows\WorkflowTaskList\Elements.xml" />
     <None Include="Content Types\New Project\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{7ec34ed1-ae81-4bec-9757-e4c79f24fc1d}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\Feature10\Feature10.feature">
+      <FeatureId>{65e5e5e0-7ef5-45cd-8489-a3cc2939e17b}</FeatureId>
     </None>
     <None Include="Features\Feature2\Feature2.feature">
       <FeatureId>{6974d9a8-d705-4a68-a9b0-1b102ef31957}</FeatureId>
@@ -142,6 +164,9 @@
     </None>
     <None Include="Features\Feature8\Feature8.feature">
       <FeatureId>{0e77b95d-db98-415d-9316-9079e6ccff9c}</FeatureId>
+    </None>
+    <None Include="Features\Feature9\Feature9.feature">
+      <FeatureId>{beee7ce0-36be-474e-af82-9b7cb8595c7a}</FeatureId>
     </None>
     <None Include="Lists\Level 9 Group\Projects - Close-out\Close-out\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{9c20f017-f487-46d2-bf30-cc91761fd292}</SharePointProjectItemId>
@@ -175,6 +200,24 @@
     </None>
     <None Include="Lists\Level 9 Group\Projects - Scope\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{2ae6d29e-fe18-4271-bb4b-22da56126f65}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\Level 9 Group\Requirements\Business Components\Business Components Instance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d8dd04ee-33cd-4a17-beb3-88a9791fd295}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\Level 9 Group\Requirements\Business Components\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{fa46d23b-b592-4686-8e61-6143c76571e0}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\Level 9 Group\Requirements\Technical Components\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{42a43e91-615d-4632-8e15-15519420dae7}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\Level 9 Group\Requirements\Technical Components\Technical Components Instance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d61463f0-e019-441c-a96c-9790a201b69f}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\Level 9 Group\Requirements\Use cases\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5ca8012c-c2a4-41f1-a73f-78066b84c599}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\Level 9 Group\Requirements\Use cases\Use cases Instance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a6c31b7e-fa55-46f8-b9b6-7de35bac451b}</SharePointProjectItemId>
     </None>
     <None Include="Lists\Level 9 Group\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{50e2cc88-8895-4bfc-8bd4-94640c1c0f53}</SharePointProjectItemId>
@@ -230,6 +273,12 @@
     <None Include="Site Columns\Gap Analysis\UseCaseLookup\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{29d26a82-4ba4-441a-aef7-2809b74ac63b}</SharePointProjectItemId>
     </None>
+    <None Include="Site Columns\Requirements\BusinessComponentType\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{21465604-e39c-43ef-aeea-f9cf4dd68d34}</SharePointProjectItemId>
+    </None>
+    <None Include="Site Columns\Requirements\ControlLookup\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{dc213b42-b9c6-40ab-888d-c0ebdc59846b}</SharePointProjectItemId>
+    </None>
     <None Include="Site Columns\Requirements\BusinessComponentLookup\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{6292d046-e169-44d5-b9ac-ca6712e47b3d}</SharePointProjectItemId>
     </None>
@@ -239,13 +288,19 @@
     <None Include="Site Columns\Requirements\TechnicalComponentLookup\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{45843a6d-e598-45e1-972d-90b4e0b88181}</SharePointProjectItemId>
     </None>
+    <None Include="Site Columns\Requirements\TechnicalLayer\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6fd11549-514b-44cb-970a-04a4d0d3417f}</SharePointProjectItemId>
+    </None>
+    <None Include="Site Columns\Requirements\UseCaseType\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{8896c5cc-f852-4c95-bac5-ed4e126fa050}</SharePointProjectItemId>
+    </None>
     <None Include="Site Columns\Scope\Deliverable\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{ebbe861a-2978-4f4b-83ea-304d0c36c6b4}</SharePointProjectItemId>
     </None>
     <None Include="Site Columns\Scope\Phase\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{eaf53718-cda2-44bd-bb07-9e125cf525e2}</SharePointProjectItemId>
     </None>
-    <None Include="Site Columns\Requirements\UseCases\SharePointProjectItem.spdata">
+    <None Include="Site Columns\Requirements\UseCaseDescription\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{e81cd01e-de08-4ec5-9938-6bf00cffb237}</SharePointProjectItemId>
     </None>
     <None Include="Workflows\WorkflowHistoryList\SharePointProjectItem.spdata">

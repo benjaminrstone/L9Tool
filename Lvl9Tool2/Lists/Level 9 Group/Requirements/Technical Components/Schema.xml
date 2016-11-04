@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="Technical Components" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/Technical Components" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      
+      
+    <ContentType ID="0x01007e6ec56ec77b4f76b45de6e549192ea7" Name="ListFieldsContentType"><FieldRefs><FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" /><FieldRef ID="{fdeadbbb-f3de-4a1c-a60a-087fd852c712}" Name="TechnicalLayer" /><FieldRef ID="{8c669bba-967c-4c3b-bdbc-1b88a9e7e519}" Name="BusinessComponentLookup" /><FieldRef ID="{663df96a-2019-4f08-aa1a-cdd3af74beba}" Name="UseCaseLookup" /><FieldRef ID="{560e6903-ffaa-4781-a694-66023b80e417}" Name="ControlLookup" /><FieldRef ID="{dab006f5-399b-4247-9134-896e82dcfaac}" Name="Description" /></FieldRefs></ContentType><ContentTypeRef ID="0x01">
+        <Folder TargetName="Item" />
+      </ContentTypeRef><ContentTypeRef ID="0x0120" /></ContentTypes>
+    <Fields>
+      
+    <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" /><Field ID="{fdeadbbb-f3de-4a1c-a60a-087fd852c712}" Name="TechnicalLayer" DisplayName="Technical Layer" Type="Choice" Required="TRUE" Group="Custom Site Columns"><CHOICES><CHOICE>Data</CHOICE><CHOICE>Application</CHOICE><CHOICE>Platform</CHOICE><CHOICE>Network</CHOICE><CHOICE>Physical</CHOICE></CHOICES><MAPPINGS><MAPPING Value="1">Data</MAPPING><MAPPING Value="2">Application</MAPPING><MAPPING Value="3">Platform</MAPPING><MAPPING Value="4">Network</MAPPING><MAPPING Value="5">Physical</MAPPING></MAPPINGS><Default>No Control</Default></Field><Field ID="{8c669bba-967c-4c3b-bdbc-1b88a9e7e519}" Name="BusinessComponentLookup" DisplayName="Business Component" Type="Lookup" Required="FALSE" Group="Custom Site Columns"></Field><Field ID="{663df96a-2019-4f08-aa1a-cdd3af74beba}" Name="UseCaseLookup" DisplayName="(Mis)Use Case" Type="Lookup" Required="FALSE" Group="Custom Site Columns" Description="Lookup the use case associated with this control"></Field><Field ID="{560e6903-ffaa-4781-a694-66023b80e417}" Name="ControlLookup" DisplayName="Control" Type="Lookup" Required="FALSE" Group="Custom Site Columns"></Field><Field ID="{dab006f5-399b-4247-9134-896e82dcfaac}" Name="Description" DisplayName="Description" Type="Note" Required="TRUE" Group="Custom Site Columns"></Field></Fields>
+    <Views>
+      
+      
+    <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitleNoMenu"></FieldRef></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitle"></FieldRef><FieldRef Name="TechnicalLayer" /><FieldRef Name="BusinessComponentLookup" /><FieldRef Name="UseCaseLookup" /><FieldRef Name="ControlLookup" /><FieldRef Name="Description" /></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="ID"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View></Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

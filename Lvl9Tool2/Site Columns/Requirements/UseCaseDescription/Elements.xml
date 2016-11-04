@@ -2,10 +2,10 @@
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
   <Field
        ID="{982a9d98-ec5c-4240-a09b-c5cea28bffb7}"
-       Name="UseCases"
+       Name="UseCaseDescription"
        Title="UseCases"
        DisplayName="Use Cases"
-       Description="Scenarios for proper use of the components selected"
+       Description="Scenarios for proper or improper use of the components selected"
        Group="Security Components"
        Type="Note"
        Required ="FALSE">

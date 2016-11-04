@@ -5,15 +5,39 @@
 
 <asp:Content ContentPlaceHolderId="PlaceHolderAdditionalPageHead" runat="server">
     <SharePoint:ScriptLink name="sp.js" runat="server" OnDemand="true" LoadAfterUI="true" Localizable="false" />
-    <!--<style type="text/css">
-    #s4-ribbonrow, .ms-cui-topBar2, .s4-notdlg, .s4-pr s4-ribbonrowhidetitle, .s4-notdlg noindex, #ms-cui-ribbonTopBars, #s4-titlerow, #s4-pr s4-notdlg s4-titlerowhidetitle, #s4-leftpanel-content {display:none !important;}
-    .s4-ca{margin-left:0px !important; margin-right:0px !important;}
-    </style> -->
+    <script type="text/javascript" src="../Scripts/jquery-1.9.1.min.js"></script>
 
     <h2 style="color:red">Cyber Security Architecture–</h2>
     <h2 style="color:red">Project Engagement</h2>
     <h2 id="ProjectName" style="color:blue">Project Name</h2>
 
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            alert("jQuery");
+        });
+    </script>
+
+    <script type="text/javascript">
+
+        var itemId = 1;
+        var ctx = new SP.ClientContext.get_current();
+        var customList = ctx.get_web().get_lists().getByTitle('Projects - Engagement');
+        var listItem = customList.getItemById(itemId);
+
+        ctx.load(listItem);
+
+        ctx.executeQueryAsync(
+            function () {
+                alert(document.getElementById("ProjectName").innerHTML);
+                alert(listItem.get_item("Title"))
+                document.getElementById("ProjectName").innerHTML = listItem.get_item("Title");
+            },
+            function (sender, args) { alert('Error: ' + args.get_message()); }
+        );
+
+
+    </script>
     
 </asp:Content>
 
@@ -45,23 +69,5 @@
 
 
 
-    <script type="text/javascript">
-        var itemId = 1;
-        var ctx = new SP.ClientContext.get_current();
-        var customList = ctx.get_web().get_lists().getByTitle('Projects - Engagement');
-        var listItem = customList.getItemById(itemId);
-
-        ctx.load(listItem);
-
-        ctx.executeQueryAsync(
-            function () {
-                alert(document.getElementById("ProjectName").innerHTML);
-                alert(listItem.get_item("Title"))
-                document.getElementById("ProjectName").innerHTML = listItem.get_item("Title");
-            },
-            function (sender, args) { alert('Error: ' + args.get_message()); }
-        );
-
-
-    </script>
+   
 </asp:Content>

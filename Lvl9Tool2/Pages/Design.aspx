@@ -15,7 +15,7 @@
     <WebPartPages:WebPartZone runat="server" FrameType="TitleBarOnly" ID="DesignTablePart" Title="Design" />
 
     <asp:HyperLink runat="server" 
-    NavigateUrl="JavaScript:window.location = _spPageContextInfo.webAbsoluteUrl + '/Pages/Design/NewForm.aspx';"
+    NavigateUrl="JavaScript:window.location = _spPageContextInfo.webAbsoluteUrl + '/Lists/Design/NewForm.aspx';"
     Text="New" />
     <br />
     <br />

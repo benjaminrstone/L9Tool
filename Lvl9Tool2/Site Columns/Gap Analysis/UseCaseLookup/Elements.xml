@@ -5,6 +5,8 @@
        Name="UseCaseLookup"
        DisplayName="(Mis)Use Case"
        Type="Lookup"
+       List="Lists/Use Cases"
+       ShowField="Title"
        Required="FALSE"
        Group="Custom Site Columns"
        Description="Lookup the use case associated with this control">

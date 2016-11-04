@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{fdeadbbb-f3de-4a1c-a60a-087fd852c712}"
+       Name="TechnicalLayer"
+       DisplayName="Technical Layer"
+       Type="Choice"
+       Required="TRUE"
+       Group="Custom Site Columns">
+
+    <CHOICES>
+      <CHOICE>Data</CHOICE>
+      <CHOICE>Application</CHOICE>
+      <CHOICE>Platform</CHOICE>
+      <CHOICE>Network</CHOICE>
+      <CHOICE>Physical</CHOICE>
+    </CHOICES>
+    <MAPPINGS>
+      <MAPPING Value="1">Data</MAPPING>
+      <MAPPING Value="2">Application</MAPPING>
+      <MAPPING Value="3">Platform</MAPPING>
+      <MAPPING Value="4">Network</MAPPING>
+      <MAPPING Value="5">Physical</MAPPING>
+    </MAPPINGS>
+    <Default></Default>
+  </Field>
+</Elements>
